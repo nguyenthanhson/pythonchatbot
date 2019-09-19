@@ -1,0 +1,5 @@
+skype_chatbot
+numpy
+tensorflow
+nltk
+tflearn
