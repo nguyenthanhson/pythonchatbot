@@ -19,6 +19,7 @@ class Prediction:
     # - data.pickle file which store all preprocessing data from training step
     # - input file or intent file (its name is stored as part of data.pickle file)
     # - model.tflearn - training model from training step
+    context = {}
 
     def load_model(self):
         if hasattr(self, 'data'):
@@ -47,7 +48,7 @@ class Prediction:
         self.labels = []
         self.docs_x = []
         self.docs_y = []
-        self.context =  {}
+        
         try:
             self.load_model()
         except Exception as e:
@@ -78,6 +79,7 @@ class Prediction:
         for r in results:
             return_list.append((self.labels[r[0]], r[1]))
         # return tuple of intent and probability
+        print('classify: ', return_list)
         return return_list
 
     def response(self, sentence, userID='123', show_details=False):
@@ -92,11 +94,11 @@ class Prediction:
                         # set context for this intent if necessary
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
-                            self.context[userID] = i['context_set']
-                        print (self.context)
+                            Prediction.context[userID] = i['context_set']
+                        print (Prediction.context)
                         # check if this intent is contextual and applies to this user's conversation
                         if not 'context_filter' in i or \
-                            (userID in self.context and 'context_filter' in i and i['context_filter'] == self.context[userID]):
+                            (userID in Prediction.context and 'context_filter' in i and i['context_filter'] == Prediction.context[userID]):
                             if show_details: print ('tag:', i['tag'])
                             # a random response from the intent
                             return random.choice(i['responses'])
