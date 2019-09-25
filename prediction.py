@@ -83,6 +83,7 @@ class Prediction:
         return return_list
 
     def response(self, sentence, userID='123', show_details=True):
+        randomResponse = ''
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
@@ -113,3 +114,5 @@ class Prediction:
                             return randomResponse
 
                 results.pop(0)
+        if randomResponse == '':
+            return 'Hello, sunshine :sunflower:! How are you?'
