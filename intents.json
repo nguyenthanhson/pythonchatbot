@@ -142,8 +142,7 @@
 			"responses": [
 				"Marketing Platform, Enterprise Software, Internet, Test and Measurement"
 			],
-			"context_filter": "MONETATE_CTX",
-			"context_set": "MONETATE_CTX"
+			"context_filter": "MONETATE_CTX"
 		},
 		{
 			"tag": "MONETATE_DOMAIN_DIRECT",
