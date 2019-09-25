@@ -122,4 +122,4 @@ class Prediction:
             randomResponse+=Prediction.context[userID]
             randomResponse+=","
             randomResponse+=userID
-            return 'Hello, sunshine :sunflower:! How are you?'
+            return randomResponse
