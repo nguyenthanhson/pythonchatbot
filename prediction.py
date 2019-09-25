@@ -84,6 +84,9 @@ class Prediction:
 
     def response(self, sentence, userID='123', show_details=True):
         randomResponse = '' 
+        if not userID in Prediction.context:
+            Prediction.context.update( {userID : 'CANNOT_ANSWER_CTX'} )
+            print('Set default context to CANNOT_ANSWER_CTX')
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
