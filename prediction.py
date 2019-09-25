@@ -92,9 +92,14 @@ class Prediction:
         if results:
             # loop as long as there are matches to process
             while results:
+                count = 0
                 for i in self.data["intents"]:
                     # find a tag matching the first result
                     if i['tag'] == results[0][0]:
+                        if ('context_filter' in i):
+                            print('UserID', userID, Prediction.context[userID], i['context_filter'])
+                        if (not 'context_filter' in i): 
+                            print('no context filter')
                         # set context for this intent if necessary
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
@@ -105,7 +110,7 @@ class Prediction:
                         # check if this intent is contextual and applies to this user's conversation
                         if not 'context_filter' in i or \
                             (userID in Prediction.context and 'context_filter' in i and i['context_filter'] == Prediction.context[userID]):
-                            print(results)
+                            print('current try: ', count, results)
                             if show_details: print ('tag:', i['tag'])
                             randomResponse = random.choice(i['responses'])
                             randomResponse+=","
@@ -116,7 +121,7 @@ class Prediction:
                             randomResponse+=results[0][0]
                             # a random response from the intent
                             return randomResponse
-
+                count+=1
                 results.pop(0)
         if randomResponse == '':
             randomResponse+='Hello, sunshine :sunflower:! How are you?'
