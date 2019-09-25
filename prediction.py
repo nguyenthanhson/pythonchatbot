@@ -94,7 +94,7 @@ class Prediction:
             while results:
                 for i in self.data["intents"]:
                     # find a tag matching the first result
-                    if i['tag'] == results[0][0]
+                    if i['tag'] == results[0][0]:
                         # set context for this intent if necessary
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
