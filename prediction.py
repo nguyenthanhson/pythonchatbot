@@ -83,10 +83,11 @@ class Prediction:
         return return_list
 
     def response(self, sentence, userID='123', show_details=True):
-        randomResponse = ''
+        randomResponse = '' 
         if not userID in Prediction.context:
             Prediction.context.update( {userID : 'KIBO_CTX'} )
-        print ('Prediction context userID: ', Prediction.context[userID])
+            print ('Prediction context userID in: ', Prediction.context[userID])
+        print ('Prediction context userID out: ', Prediction.context[userID])
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
