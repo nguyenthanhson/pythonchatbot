@@ -95,12 +95,21 @@ class Prediction:
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
                             Prediction.context[userID] = i['context_set']
-                        print ('Prediction context: ', Prediction.context[userID])
+                            print ('Prediction context: ', Prediction.context)
+                            print ('Prediction context userID: ', Prediction.context[userID])
+                            print ('current context_set ', i['context_set'])
                         # check if this intent is contextual and applies to this user's conversation
                         if not 'context_filter' in i or \
                             (userID in Prediction.context and 'context_filter' in i and i['context_filter'] == Prediction.context[userID]):
                             if show_details: print ('tag:', i['tag'])
+                            randomResponse = random.choice(i['responses'])
+                            randomResponse+=","
+                            randomResponse+=Prediction.context[userID]
+                            randomResponse+=","
+                            randomResponse+=i['tag']
+                            randomResponse+=","
+                            randomResponse+=results[0][0]
                             # a random response from the intent
-                            return random.choice(i['responses'])
+                            return randomResponse
 
                 results.pop(0)
