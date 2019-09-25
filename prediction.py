@@ -115,4 +115,11 @@ class Prediction:
 
                 results.pop(0)
         if randomResponse == '':
+            randomResponse+='Hello, sunshine :sunflower:! How are you?'
+            randomResponse+=","
+            randomResponse+=Prediction.context
+            randomResponse+=","
+            randomResponse+=Prediction.context[userID]
+            randomResponse+=","
+            randomResponse+=userID
             return 'Hello, sunshine :sunflower:! How are you?'
