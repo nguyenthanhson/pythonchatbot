@@ -1,28 +1,164 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
-         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
-         "context_set": ""
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"]
-        },
-        {"tag": "hours",
-         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
-        },
-        {"tag": "payments",
-         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
-        },
-        {"tag": "opentoday",
-         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
-        }
-   ]
+{
+	"intents": [
+		{
+			"tag": "KIBO",
+			"patterns": [
+				"Kibo info",
+				"Kibo information",
+				"Kibo concern",
+				"I have some questions about KIBO project",
+				"help with Kibo account",
+				"Kibo project",
+				"Kibo account",
+				"Kibo"
+			],
+			"responses": [
+				"We can help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Kibo account. What's information that you need me to help with?"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?"
+			],
+			"responses": [
+				"717 N Harwood St STE 1900, Dallas, TX 75201, USA"
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		
+		{
+			"tag": "KIBO_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Kibo address?",
+				"Address of Kibo office?",
+				"where is the Kibo's office in US",
+				"Location of Kibo's office",
+				"where in US?",
+				"can you give me Kibo address?",
+				"can you give me the address of Kibo account?"
+			],
+			"responses": [
+				"717 N Harwood St STE 1900, Dallas, TX 75201, USA"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain"
+			],
+			"responses": [
+				"Provides eCommerce platform, services and expertise designed specifically for mid to upper tier retailers"
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Kibo business domain?",
+				"Kibo domain knowledge?",
+				"in which field Kibo is working on",
+				"business field of Kibo project",
+				"Kibo bussiness?",
+				"Kibo domain?"
+			],
+			"responses": [
+				"Provides eCommerce platform, services and expertise designed specifically for mid to upper tier retailers"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "MONETATE",
+			"patterns": [
+				"Monetate info",
+				"Monetate information",
+				"Monetate concern",
+				"I have some questions about Monetate project",
+				"help with Monetate account",
+				"Monetate project",
+				"Monetate account",
+				"Monetate"
+			],
+			"responses": [
+				"We can help you about Address, the Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Monetate account. What's information that you need me to help with? "
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?"
+			],
+			"responses": [
+				"27 E 28th St 8th Floor, New York, NY 10016, USA"
+			],
+			"context_filter": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Monetate address?",
+				"Address of Monetate office?",
+				"where is the Monetate's office in US",
+				"Location of Monetate's office",
+				"where in US?",
+				"can you give me Monetate address?",
+				"can you give me the address of Monetate account?"
+			],
+			"responses": [
+				"27 E 28th St 8th Floor, New York, NY 10016, USA"
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain"
+			],
+			"responses": [
+				"Marketing Platform, Enterprise Software, Internet, Test and Measurement"
+			],
+			"context_filter": "MONETATE_CTX",
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Monetate business domain?",
+				"Monetate domain knowledge?",
+				"in which field Monetate is working on",
+				"business field of Monetate project",
+				"Monetate bussiness?",
+				"Monetate domain?"
+			],
+			"responses": [
+				"Marketing Platform, Enterprise Software, Internet, Test and Measurement"
+			],
+			"context_set": "MONETATE_CTX"
+		}
+	]
 }

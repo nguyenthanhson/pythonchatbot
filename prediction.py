@@ -82,7 +82,7 @@ class Prediction:
         print('classify: ', return_list)
         return return_list
 
-    def response(self, sentence, userID='123', show_details=False):
+    def response(self, sentence, userID='123', show_details=True):
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
@@ -95,7 +95,7 @@ class Prediction:
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
                             Prediction.context[userID] = i['context_set']
-                        print (Prediction.context)
+                        print ('Prediction context: ', Prediction.context)
                         # check if this intent is contextual and applies to this user's conversation
                         if not 'context_filter' in i or \
                             (userID in Prediction.context and 'context_filter' in i and i['context_filter'] == Prediction.context[userID]):
