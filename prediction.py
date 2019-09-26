@@ -82,12 +82,12 @@ class Prediction:
         print('classify: ', return_list)
         return return_list
 
-    def response(self, sentence, userID='123', show_details=True):
+    def response(self, sentence, userID='123', show_details=False):
         print('Initial context:', json.dumps(Prediction.context, indent = 4))
         randomResponse = '' 
-        # if not userID in Prediction.context:
+        #if not userID in Prediction.context:
         #     #Prediction.context[userID] = ''
-        #     #Prediction.context.update( {userID : ''} )
+                #Prediction.context.update( {userID : ''} )
         #     print('First time I see you!!!')
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
