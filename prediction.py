@@ -6,6 +6,7 @@ import tensorflow
 import random
 import json
 import pickle
+from tinydb import TinyDB, Query
 
 from nltk.stem.lancaster import LancasterStemmer
 
@@ -19,8 +20,8 @@ class Prediction:
     # - data.pickle file which store all preprocessing data from training step
     # - input file or intent file (its name is stored as part of data.pickle file)
     # - model.tflearn - training model from training step
-    context = {}
-
+    #context = {}
+    db = TinyDB("./db.json")
     def load_model(self):
         if hasattr(self, 'data'):
             return
@@ -48,7 +49,6 @@ class Prediction:
         self.labels = []
         self.docs_x = []
         self.docs_y = []
-        
         try:
             self.load_model()
         except Exception as e:
@@ -83,12 +83,11 @@ class Prediction:
         return return_list
 
     def response(self, sentence, userID='123', show_details=False):
-        print('Initial context:', json.dumps(Prediction.context, indent = 4))
+        print('Initial context:', json.dumps(Prediction.db.all(), indent = 4))
         randomResponse = '' 
-        #if not userID in Prediction.context:
-        #     #Prediction.context[userID] = ''
-                #Prediction.context.update( {userID : ''} )
-        #     print('First time I see you!!!')
+        if not Prediction.db.search(Query().userID):
+            print('First time I see you!!!')
+            Prediction.db.insert({'userID': userID, 'context': ''})
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
@@ -98,25 +97,18 @@ class Prediction:
                 for i in self.data["intents"]:
                     # find a tag matching the first result
                     if i['tag'] == results[0][0]:
-                        # if ('context_filter' in i):
-                        #     print('UserID', userID, Prediction.context[userID], i['context_filter'])
-                        # if (not 'context_filter' in i): 
-                        #     print('no context filter')
-                        # set context for this intent if necessary
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
-                            # if not userID in Prediction.context:
-                            #     Prediction.context.update( {userID : i['context_set']} )
-                            Prediction.context.update({userID: i['context_set']})
-                            print ('Set new context: ', Prediction.context[userID])
+                            Prediction.db.update({'context': i['context_set']}, Query().userID == userID)
+                            print ('Set new context: ', Prediction.db.search(Query().userID == userID))
                         # check if this intent is contextual and applies to this user's conversation
                         if not 'context_filter' in i or \
-                            (userID in Prediction.context and 'context_filter' in i and i['context_filter'] == Prediction.context[userID]):
+                            (Prediction.db.search(Query().userID == userID) and 'context_filter' in i and i['context_filter'] == Prediction.db.search(Query().userID == userID)[0]['context']):
                             print('current try: ', count, results)
                             if show_details: print ('tag:', i['tag'])
                             if show_details: randomResponse += random.choice(i['responses'])
                             if show_details: randomResponse+="\ncurrent context:"
-                            if show_details: randomResponse+=json.dumps(Prediction.context, indent = 4)
+                            if show_details: randomResponse+=json.dumps(Prediction.db.all(), indent = 4)
                             if show_details: randomResponse+="\nanswer tag: "
                             if show_details: randomResponse+=i['tag']
                             if show_details: randomResponse+="\nActual userID: "
@@ -129,3 +121,4 @@ class Prediction:
         lostMyMind = ["I’d forget my head if it wasn’t attached. Sorry, where are we? ", "I'm busy looking your face, what we are talking about?", "What was I saying? I lost my train of thought."]
         if randomResponse == '':
             return random.choice(lostMyMind)
+
