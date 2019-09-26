@@ -21,7 +21,7 @@ class Prediction:
     # - input file or intent file (its name is stored as part of data.pickle file)
     # - model.tflearn - training model from training step
     #context = {}
-    db = TinyDB("./db.json")
+    db = TinyDB("db.json")
     def load_model(self):
         if hasattr(self, 'data'):
             return
@@ -82,41 +82,33 @@ class Prediction:
         print('classify: ', return_list)
         return return_list
 
-    def response(self, sentence, userID='123', show_details=False):
-        print('Initial context:', json.dumps(Prediction.db.all(), indent = 4))
+    def response(self, sentence, userID='123', show_details=True):
+        print('My context:', json.dumps(Prediction.db.all(), indent = 4))
         randomResponse = '' 
-        if not Prediction.db.search(Query().userID):
+        if not Prediction.db.search(Query().userID == userID):
             print('First time I see you!!!')
             Prediction.db.insert({'userID': userID, 'context': ''})
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
+            for result in results:
+                for i in self.data["intents"]:
+                    # find a tag matching the first result
+                    if i['tag'] == result[0]:
+                        # check if this intent is contextual and applies to this user's conversation
+                        if (Prediction.db.search(Query().userID == userID) and 'context_filter' in i and i['context_filter'] == Prediction.db.search(Query().userID == userID)[0]['context']):
+                            if show_details: print ('tag:', i['tag'])
+                            return random.choice(i['responses'])
             # loop as long as there are matches to process
             while results:
-                count = 0
                 for i in self.data["intents"]:
                     # find a tag matching the first result
                     if i['tag'] == results[0][0]:
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
                             Prediction.db.update({'context': i['context_set']}, Query().userID == userID)
-                            print ('Set new context: ', Prediction.db.search(Query().userID == userID))
-                        # check if this intent is contextual and applies to this user's conversation
-                        if not 'context_filter' in i or \
-                            (Prediction.db.search(Query().userID == userID) and 'context_filter' in i and i['context_filter'] == Prediction.db.search(Query().userID == userID)[0]['context']):
-                            print('current try: ', count, results)
-                            if show_details: print ('tag:', i['tag'])
-                            randomResponse += random.choice(i['responses'])
-                            if show_details: randomResponse+="\ncurrent context:"
-                            if show_details: randomResponse+=json.dumps(Prediction.db.all(), indent = 4)
-                            if show_details: randomResponse+="\nanswer tag: "
-                            if show_details: randomResponse+=i['tag']
-                            if show_details: randomResponse+="\nActual userID: "
-                            if show_details: randomResponse+=userID
-                            #randomResponse+=results[0][0]
-                            # a random response from the intent
-                            return randomResponse
-                count+=1
+                            print ('Set new context: ', Prediction.db.search(Query().userID == userID))                     
+                            return random.choice(i['responses'])
                 results.pop(0)
         lostMyMind = ["I’d forget my head if it wasn’t attached. Sorry, where are we? ", "I'm busy looking your face, what we are talking about?", "What was I saying? I lost my train of thought."]
         if randomResponse == '':
