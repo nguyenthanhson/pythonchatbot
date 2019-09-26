@@ -83,9 +83,9 @@ class Prediction:
         return return_list
 
     def response(self, sentence, userID='123', show_details=True):
+        print('Initial context:', json.dumps(Prediction.context, indent = 4))
         randomResponse = '' 
         if not userID in Prediction.context:
-            print('Initial context:', json.dumps(Prediction.context, indent = 4))
             Prediction.context[userID] = ''
             #Prediction.context.update( {userID : ''} )
             print('First time I see you!!!')
