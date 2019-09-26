@@ -85,10 +85,10 @@ class Prediction:
     def response(self, sentence, userID='123', show_details=True):
         print('Initial context:', json.dumps(Prediction.context, indent = 4))
         randomResponse = '' 
-        if not userID in Prediction.context:
-            Prediction.context[userID] = ''
-            #Prediction.context.update( {userID : ''} )
-            print('First time I see you!!!')
+        # if not userID in Prediction.context:
+        #     #Prediction.context[userID] = ''
+        #     #Prediction.context.update( {userID : ''} )
+        #     print('First time I see you!!!')
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
@@ -130,8 +130,8 @@ class Prediction:
             randomResponse+='Hello, sunshine :sunflower:! How are you?'
             if show_details: randomResponse+="\ncurrent context:"
             if show_details: randomResponse+=json.dumps(Prediction.context, indent = 4)
-            if show_details: randomResponse+="\nanswer tag: "
-            if show_details: randomResponse+=i['tag']
+            #if show_details: randomResponse+="\nanswer tag: "
+            #if show_details: randomResponse+=i['tag']
             if show_details: randomResponse+="\nActual userID " 
             if show_details: randomResponse+=userID
             return randomResponse
