@@ -84,9 +84,9 @@ class Prediction:
 
     def response(self, sentence, userID='123', show_details=True):
         randomResponse = '' 
-        if not userID in Prediction.context:
-            Prediction.context.update( {userID : 'CANNOT_ANSWER_CTX'} )
-            print('Set default context to CANNOT_ANSWER_CTX')
+        # if not userID in Prediction.context:
+        #     Prediction.context.update( {userID : 'CANNOT_ANSWER_CTX'} )
+        #     print('Set default context to CANNOT_ANSWER_CTX')
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
@@ -96,15 +96,15 @@ class Prediction:
                 for i in self.data["intents"]:
                     # find a tag matching the first result
                     if i['tag'] == results[0][0]:
-                        if ('context_filter' in i):
-                            print('UserID', userID, Prediction.context[userID], i['context_filter'])
-                        if (not 'context_filter' in i): 
-                            print('no context filter')
+                        # if ('context_filter' in i):
+                        #     print('UserID', userID, Prediction.context[userID], i['context_filter'])
+                        # if (not 'context_filter' in i): 
+                        #     print('no context filter')
                         # set context for this intent if necessary
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
-                            if not userID in Prediction.context:
-                                Prediction.context.update( {userID : i['context_set']} )
+                            # if not userID in Prediction.context:
+                            #     Prediction.context.update( {userID : i['context_set']} )
                             Prediction.context[userID] = i['context_set']
                             print ('Set new context: ', Prediction.context[userID])
                         # check if this intent is contextual and applies to this user's conversation
@@ -113,16 +113,23 @@ class Prediction:
                             print('current try: ', count, results)
                             if show_details: print ('tag:', i['tag'])
                             randomResponse = random.choice(i['responses'])
-                            randomResponse+=","
-                            randomResponse+=Prediction.context[userID]
-                            randomResponse+=","
+                            randomResponse+="\ncurrent context:"
+                            randomResponse+=json.dumps(Prediction.context, indent = 4)
+                            randomResponse+="\nanswer tag: "
                             randomResponse+=i['tag']
-                            randomResponse+=","
-                            randomResponse+=results[0][0]
+                            randomResponse+="\nActual userID"
+                            randomResponse+=userID
+                            #randomResponse+=results[0][0]
                             # a random response from the intent
                             return randomResponse
                 count+=1
                 results.pop(0)
         if randomResponse == '':
             randomResponse+='Hello, sunshine :sunflower:! How are you?'
+            randomResponse+="\ncurrent context:"
+            randomResponse+=json.dumps(Prediction.context, indent = 4)
+            randomResponse+="\nanswer tag: "
+            randomResponse+=i['tag']
+            randomResponse+="\nActual userID" 
+            randomResponse+=userID
             return randomResponse
