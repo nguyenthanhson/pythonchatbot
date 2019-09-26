@@ -84,9 +84,11 @@ class Prediction:
 
     def response(self, sentence, userID='123', show_details=True):
         randomResponse = '' 
-        # if not userID in Prediction.context:
-        #     Prediction.context.update( {userID : 'CANNOT_ANSWER_CTX'} )
-        #     print('Set default context to CANNOT_ANSWER_CTX')
+        if not userID in Prediction.context:
+            Prediction.context[userID] = ''
+            #Prediction.context.update( {userID : ''} )
+            if show_details: randomResponse = 'First time I see you \\n'
+            print('First time I see you!!!')
         results = self.classify(sentence)
         # if we have a classification then find the matching intent tag
         if results:
@@ -112,13 +114,13 @@ class Prediction:
                             (userID in Prediction.context and 'context_filter' in i and i['context_filter'] == Prediction.context[userID]):
                             print('current try: ', count, results)
                             if show_details: print ('tag:', i['tag'])
-                            randomResponse = random.choice(i['responses'])
-                            randomResponse+="\ncurrent context:"
-                            randomResponse+=json.dumps(Prediction.context, indent = 4)
-                            randomResponse+="\nanswer tag: "
-                            randomResponse+=i['tag']
-                            randomResponse+="\nActual userID"
-                            randomResponse+=userID
+                            if show_details: randomResponse = random.choice(i['responses'])
+                            if show_details: randomResponse+="\\ncurrent context:"
+                            if show_details: randomResponse+=json.dumps(Prediction.context, indent = 4)
+                            if show_details: randomResponse+="\\nanswer tag: "
+                            if show_details: randomResponse+=i['tag']
+                            if show_details: randomResponse+="\\nActual userID: "
+                            if show_details: randomResponse+=userID
                             #randomResponse+=results[0][0]
                             # a random response from the intent
                             return randomResponse
@@ -126,10 +128,10 @@ class Prediction:
                 results.pop(0)
         if randomResponse == '':
             randomResponse+='Hello, sunshine :sunflower:! How are you?'
-            randomResponse+="\ncurrent context:"
-            randomResponse+=json.dumps(Prediction.context, indent = 4)
-            randomResponse+="\nanswer tag: "
-            randomResponse+=i['tag']
-            randomResponse+="\nActual userID" 
-            randomResponse+=userID
+            if show_details: randomResponse+="\\ncurrent context:"
+            if show_details: randomResponse+=json.dumps(Prediction.context, indent = 4)
+            if show_details: randomResponse+="\\nanswer tag: "
+            if show_details: randomResponse+=i['tag']
+            if show_details: randomResponse+="\\nActual userID" 
+            if show_details: randomResponse+=userID
             return randomResponse
