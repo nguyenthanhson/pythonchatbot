@@ -106,7 +106,7 @@ class Prediction:
                             (Prediction.db.search(Query().userID == userID) and 'context_filter' in i and i['context_filter'] == Prediction.db.search(Query().userID == userID)[0]['context']):
                             print('current try: ', count, results)
                             if show_details: print ('tag:', i['tag'])
-                            if show_details: randomResponse += random.choice(i['responses'])
+                            randomResponse += random.choice(i['responses'])
                             if show_details: randomResponse+="\ncurrent context:"
                             if show_details: randomResponse+=json.dumps(Prediction.db.all(), indent = 4)
                             if show_details: randomResponse+="\nanswer tag: "
