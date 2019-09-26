@@ -126,12 +126,6 @@ class Prediction:
                             return randomResponse
                 count+=1
                 results.pop(0)
+        lostMyMind = ["I’d forget my head if it wasn’t attached. Sorry, where are we? ", "I'm busy looking your face, what we are talking about?", "What was I saying? I lost my train of thought."]
         if randomResponse == '':
-            randomResponse+='Hello, sunshine :sunflower:! How are you?'
-            if show_details: randomResponse+="\ncurrent context:"
-            if show_details: randomResponse+=json.dumps(Prediction.context, indent = 4)
-            #if show_details: randomResponse+="\nanswer tag: "
-            #if show_details: randomResponse+=i['tag']
-            if show_details: randomResponse+="\nActual userID " 
-            if show_details: randomResponse+=userID
-            return randomResponse
+            return random.choice(lostMyMind)
