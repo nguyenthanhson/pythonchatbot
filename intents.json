@@ -1,7 +1,7 @@
 {
 	"intents": [
 		{
-			"tag": "greeting with Hello",
+			"tag": "GREETING_WITH_HELLO",
 			"patterns": [
 				"Hi",
 				"Hello",
@@ -29,7 +29,7 @@
 			"context_set": ""
 		},
 		{
-			"tag": "greeting with Seeing",
+			"tag": "GREETING_WITH_SEEING",
 			"patterns": [
 				"Nice to meet you",
 				"Pleased to meet you",
@@ -39,12 +39,12 @@
 			],
 			"responses": [
 				"You made my day by giving me a glimpse of yourself! :rose::rose::rose:",
-				"You just brightened up my day!"
+				"You just brightened up my day! :rose::rose::rose:"
 			],
 			"context_set": ""
 		},
 		{
-			"tag": "greeting with Who",
+			"tag": "GREETING_WITH_WHO",
 			"patterns": [
 				"who are you?",
 				"who're you?"
@@ -56,7 +56,7 @@
 			"context_set": ""
 		},
 		{
-			"tag": "greeting with how",
+			"tag": "GREETING_WITH_HOW",
 			"patterns": [
 				"How are you",
 				"How is it going?",
@@ -65,40 +65,40 @@
 				"your feeling today?"
 			],
 			"responses": [
-				"Much better now that you are with me",
-				"My lawyer says I don't have to answer that question but my doctor said I'd live",
-				"Better now that I'm talking to you",
-				"Well, I haven't had my morning coffee yet and no one has gotten hurt, so I'd say 'pretty good' at this point in time."
+				"Much better now that you are with me :kiwifruit:",
+				"My lawyer says I don't have to answer that question but my doctor said I'd live :tropical_drink: ",
+				"Better now that I'm talking to you :tropical_drink: ",
+				"Well, I haven't had my morning coffee yet and no one has gotten hurt, so I'd say 'pretty good' at this point in time. :coffee: "
 			],
 			"context_set": ""
 		},
 		{
-			"tag": "greeting with what",
+			"tag": "GREETING_WITH_WHAT",
 			"patterns": [
 				"What is going on?",
 				"What is up?"
 			],
 			"responses": [
-				"I wasn't feeling good until you spoke to me",
-				"Nice try! Now could you please empty your pockets? I'm definitely sure you just stole my heart.",
-				"I was daydreaming until you came and made it a reality",
-				"I'm busy, but do you want me to add you to my to-do list? ("
+				"I wasn't feeling good until you spoke to me :no_good: ",
+				"Nice try! Now could you please empty your pockets? I'm definitely sure you just stole my heart. :heart:",
+				"I was daydreaming until you came and made it a reality :grinning:",
+				"I'm busy, but do you want me to add you to my to-do list :grinning:?"
 			],
 			"context_set": ""
 		},
 		{
-			"tag": "greeting with what-doing",
+			"tag": "GREETING_WITH_WHAT_DOING",
 			"patterns": [
 				"What are you doing?"
 			],
 			"responses": [
-				"I'm on this mission to stop thinking about you. It's called: Mission impossible!",
-				"Just Smile Like an Idiot and thinking about you"
+				"I'm on this mission to stop thinking about you. It's called: Mission impossible! :wink:",
+				"Just Smile Like an Idiot and thinking about you :wink:"
 			],
 			"context_set": ""
 		},
 		{
-			"tag": "goodbye",
+			"tag": "GOODBYE",
 			"patterns": [
 				"Bye",
 				"See you later",
@@ -118,7 +118,7 @@
 			"context_set": ""
 		},
 		{
-			"tag": "thanks",
+			"tag": "THANKS",
 			"patterns": [
 				"Thanks",
 				"Thank you",
@@ -134,7 +134,7 @@
 				"Know that you know that I know that you know that I just wanted to say Happy to talk to you! :gift_heart:",
 				"I'm happy to help. You = grateful, Me = awesome. :hearts:",
 				"My pleasure, if I had a dollar for every time you said Thank, I would be rich! :money_with_wings:",
-				"This is easy, I can do it, and it doesn't pose any problems"
+				"This is easy, I can do it, and it doesn't pose any problems :wink:"
 			],
 			"context_set": ""
 		},
@@ -148,7 +148,7 @@
 				"Is everything alright?"
 			],
 			"responses": [
-				"It's been a difficult day. People are talking too loud. Please keep silent. Let me think before answer all of your questions. I need a :taco: from BU head",
+				"It's been a difficult day. People are talking too loud. Please keep silent. \n\r Let me think before answer all of your questions. I need a :taco: from BU head",
 				"I'm very happy right now. I need a :taco: from BU Head to get started"
 			],
 			"context_set": ""
@@ -165,7 +165,20 @@
 				"our BU head"
 			],
 			"responses": [
-				"She is Mai Le, She deserves To Be Kissed By Zac Effron or Jason Statham. However she is stingy to share :taco: for her members. I'll never give her a :taco:"
+				"She is Mai Le, She deserves To Be Kissed By Zac Effron or Jason Statham. \n\r However she is stingy to share :taco: for her members. I'll never give her a :taco:"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "APLUS-BIRTHDAY",
+			"patterns": [
+				"birthday",
+				"ceremony",
+				"ceremonies",
+				"A+ birthday"
+			],
+			"responses": [
+				"We have completed another successful year and it is nice to see our growing. \n\r Happy birthday A+ :birthday:. I'd like to share :taco: for everyone"
 			],
 			"context_set": ""
 		},
@@ -183,7 +196,7 @@
 				"Could you please give me the location of A+ BU?"
 			],
 			"responses": [
-				"A+ BU has 8 accounts : Cox(KBB, Dealer.com, Autotrader), Monetate, KIBO, CareLogistics,  Agreement Express, Medidata, CloudHMS, BabySharks. We all stay at Floor 4 &Floor 5, TV office. The number of resources is around 170 and it has been changed frequenly so please ask beautiful girl - Ha Phan to have an update"
+				"A+ BU has 8 accounts : \n\r Cox (KBB, Dealer.com, Autotrader), Monetate, KIBO, CareLogistics, Agreement Express, Medidata, CloudHMS, BabySharks. \n\r We all stay at Floor 4 & Floor 5, TV office. \n\r The number of resources is around 170 and it has been changed frequenly so please ask beautiful girl - Ha Phan to have an update \n\r Happy birthday A+ !!! :birthday:"
 			],
 			"context_set": ""
 		},
@@ -200,7 +213,7 @@
 				"Kibo"
 			],
 			"responses": [
-				":kibo: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Kibo account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :kibo: KIBO account. \n\r  What's information that you need me to help with?"
 			],
 			"context_set": "KIBO_CTX"
 		},
@@ -538,7 +551,7 @@
 				"Tell me about the team fun fact"
 			],
 			"responses": [
-				"Kibo needs food, loves food... :hamburger: So plz give us food. You want to hear a story, just come to Qui (Huy Dang) :stuck_out_tongue_winking_eye:, an amazing_humorous_forever looped_story teller "
+				"Kibo needs food, loves food... :hamburger: So plz give us food. \n\r You want to hear a story, just come to Qui (Huy Dang) :stuck_out_tongue_winking_eye:, an amazing_humorous_forever looped_story teller \n\r If you want to be a super troll man, let's join Kibo \n\r If you want to know how cute the team is, let join Kibo :two_hearts: "
 			],
 			"context_filter": "KIBO_CTX"
 		},
@@ -555,7 +568,7 @@
 				"Is there any fun fact in Kibo account?"
 			],
 			"responses": [
-				"Kibo needs food, loves food... :hamburger: So plz give us food. You want to hear a story, just come to Qui (Huy Dang) :stuck_out_tongue_winking_eye:, an amazing_humorous_forever looped_story teller "
+				"Kibo needs food, loves food... :hamburger: So plz give us food. \n\r You want to hear a story, just come to Qui (Huy Dang) :stuck_out_tongue_winking_eye:, an amazing_humorous_forever looped_story teller \n\r If you want to be a super troll man, let's join Kibo \n\r If you want to know how cute the team is, let join Kibo :two_hearts: "
 			],
 			"context_set": "KIBO_CTX"
 		},
@@ -600,7 +613,7 @@
 				"Monetate"
 			],
 			"responses": [
-				":monetate:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Monetate account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :monetate: MONETATE account. \n\r  What's information that you need me to help with?"
 			],
 			"context_set": "MONETATE_CTX"
 		},
@@ -938,7 +951,7 @@
 				"Tell me about the team fun fact"
 			],
 			"responses": [
-				"all beautiful people here! :heart_eyes:"
+				"All beautiful people here! :heart_eyes: \n\r Smart, intelligent, faces of KMS are in this team :grin:"
 			],
 			"context_filter": "MONETATE_CTX"
 		},
@@ -955,7 +968,7 @@
 				"Is there any fun fact in Monetate account?"
 			],
 			"responses": [
-				"all beautiful people here! :heart_eyes:"
+				"All beautiful people here! :heart_eyes: \n\r Smart, intelligent, faces of KMS are in this team :grin:"
 			],
 			"context_set": "MONETATE_CTX"
 		},
@@ -1000,7 +1013,7 @@
 				"Medidata"
 			],
 			"responses": [
-				":medidata:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Medidata account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :medidata: MEDIDATA account. \n\r What's information that you need me to help with?"
 			],
 			"context_set": "MEDIDATA_CTX"
 		},
@@ -1400,7 +1413,7 @@
 				"Care Logistics"
 			],
 			"responses": [
-				":carelogistics:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Care Logistics account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :carelogistics: CARE LOGISTICS account. \n\r What's information that you need me to help with?"
 			],
 			"context_set": "CARE_LOGISTICS_CTX"
 		},
@@ -1800,7 +1813,7 @@
 				"Cloud HMS"
 			],
 			"responses": [
-				":cloudhms:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Cloud HMS account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :cloudhms: CLOUD HMS account. \n\r What's information that you need me to help with?"
 			],
 			"context_set": "CLOUDHMS_CTX"
 		},
@@ -2138,7 +2151,7 @@
 				"Tell me about the team fun fact"
 			],
 			"responses": [
-				"Do you want to practice Vietnamese? :yum: Come join us! Do you want to work onsite regularly? Come join us! :rolling_on_the_floor_laughing:"
+				"Do you want to practice Vietnamese? :yum: Come join us! \n\r Do you want to work onsite regularly? Come join us! :rolling_on_the_floor_laughing:"
 			],
 			"context_filter": "CLOUDHMS_CTX"
 		},
@@ -2155,7 +2168,7 @@
 				"Is there any fun fact in Cloud HMS account?"
 			],
 			"responses": [
-				"Do you want to practice Vietnamese? :yum: Come join us! Do you want to work onsite regularly? Come join us! :rolling_on_the_floor_laughing:"
+				"Do you want to practice Vietnamese? :yum: Come join us! \n\r Do you want to work onsite regularly? Come join us! :rolling_on_the_floor_laughing:"
 			],
 			"context_set": "CLOUDHMS_CTX"
 		},
@@ -2200,7 +2213,7 @@
 				"Baby Sharks"
 			],
 			"responses": [
-				":babysharks:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Baby Sharks account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :babysharks: BABY SHARKS account. \n\r What's information that you need me to help with?"
 			],
 			"context_set": "BABYSHARKS_CTX"
 		},
@@ -2600,7 +2613,7 @@
 				"KBB"
 			],
 			"responses": [
-				":kbb:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of KBB account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :kbb: KBB account.  \n\r What's information that you need me to help with?"
 			],
 			"context_set": "KBB_CTX"
 		},
@@ -2896,7 +2909,7 @@
 				"I want to know about their favorite activities"
 			],
 			"responses": [
-				"Learning - Sharing - Playing - Caring - Listening :star-struck: \\n Master of Cars, but have no any car :car: \\n Ranked the first in the number of Gay Boys \\n Eat, eat more, eat forever (Viva 'banh trang tron') \\n Young, strong & long fun \\n Gym everyday with special care from Muscle Boys"
+				"Learning - Sharing - Playing - Caring - Listening :star-struck: \n\r Master of Cars, but have no any car :car: \n\r Ranked the first in the number of Gay Boys \n\r Eat, eat more, eat forever (Viva 'banh trang tron') \n\r Young, strong & long fun \n\r Gym everyday with special care from Muscle Boys"
 			],
 			"context_filter": "KBB_CTX"
 		},
@@ -2916,7 +2929,7 @@
 				"Can you give me favorite activities of KBB team?"
 			],
 			"responses": [
-				"Learning - Sharing - Playing - Caring - Listening :star-struck: \\n Master of Cars, but have no any car :car: \\n Ranked the first in the number of Gay Boys \\n Eat, eat more, eat forever (Viva 'banh trang tron') \\n Young, strong & long fun \\n Gym everyday with special care from Muscle Boys"
+				"Learning - Sharing - Playing - Caring - Listening :star-struck: \n\r Master of Cars, but have no any car :car: \n\r Ranked the first in the number of Gay Boys \n\r Eat, eat more, eat forever (Viva 'banh trang tron') \n\r Young, strong & long fun \n\r Gym everyday with special care from Muscle Boys"
 			],
 			"context_set": "KBB_CTX"
 		},
@@ -2938,7 +2951,7 @@
 				"Tell me about the team fun fact"
 			],
 			"responses": [
-				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \\n Stable COE audit rating of 4.3 \\n Nude Job (Nghiep Tran) is the face of every birth - month party :man_dancing: ... except his"
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \n\r Stable COE audit rating of 4.3 \n\r Nude Job (Nghiep Tran) is the face of every birth - month party :man_dancing: ... except his"
 			],
 			"context_filter": "KBB_CTX"
 		},
@@ -2955,7 +2968,7 @@
 				"Is there any fun fact in KBB account?"
 			],
 			"responses": [
-				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \\n Stable COE audit rating of 4.3 \\n Nude Job (Nghiep Tran) is the face of every birth - month party :man_dancing: ... except his"
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \n\r Stable COE audit rating of 4.3 \n\r Nude Job (Nghiep Tran) is the face of every birth - month party :man_dancing: ... except his"
 			],
 			"context_set": "KBB_CTX"
 		},
@@ -3000,7 +3013,7 @@
 				"Hot Schedules"
 			],
 			"responses": [
-				":hotschedules: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Hot Schedules account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :hotschedules: HOT SCHEDULES account. \n\r What's information that you need me to help with?"
 			],
 			"context_set": "HOTSCHEDULES_CTX"
 		},
@@ -3338,7 +3351,7 @@
 				"Tell me about the team fun fact"
 			],
 			"responses": [
-				"The biggest project in KMS (140 members at peak time) :man-lifting-weights: \\n We have internal CEO team which means Chief Entertainment Officers"
+				"The biggest project in KMS (140 members at peak time) :man-lifting-weights: \n\r We have internal CEO team which means Chief Entertainment Officers"
 			],
 			"context_filter": "HOTSCHEDULES_CTX"
 		},
@@ -3355,7 +3368,7 @@
 				"Is there any fun fact in Hot Schedules account?"
 			],
 			"responses": [
-				"The biggest project in KMS (140 members at peak time) :man-lifting-weights: \\n We have internal CEO team which means Chief Entertainment Officers"
+				"The biggest project in KMS (140 members at peak time) :man-lifting-weights: \n\r We have internal CEO team which means Chief Entertainment Officers"
 			],
 			"context_set": "HOTSCHEDULES_CTX"
 		},
@@ -3408,7 +3421,7 @@
 				"Auto Trader"
 			],
 			"responses": [
-				":autotrader: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of AutoTrader  account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :autotrader: AUTOTRADER Trader  account.  \n\r What's information that you need me to help with?"
 			],
 			"context_set": "AUTOTRADER_CTX"
 		},
@@ -3746,7 +3759,7 @@
 				"Tell me about the team fun fact"
 			],
 			"responses": [
-				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) :kissing_heart: \\n AutoTrader is under the guardian of a friendly Autobot (Bumblebee)"
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) :kissing_heart: \n\r AutoTrader is under the guardian of a friendly Autobot (Bumblebee)"
 			],
 			"context_filter": "AUTOTRADER_CTX"
 		},
@@ -3763,7 +3776,7 @@
 				"Is there any fun fact in AutoTrader  account?"
 			],
 			"responses": [
-				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) :kissing_heart: \\n AutoTrader is under the guardian of a friendly Autobot (Bumblebee)"
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) :kissing_heart: \n\r AutoTrader is under the guardian of a friendly Autobot (Bumblebee)"
 			],
 			"context_set": "AUTOTRADER_CTX"
 		},
@@ -3808,7 +3821,7 @@
 				"Agreement Express"
 			],
 			"responses": [
-				":agreementexpress: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Agreement Express  account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :agreementexpress: AGREEMENT EXPRESS account.  \n\r What's information that you need me to help with?"
 			],
 			"context_set": "AGREEMENTEXPRESS_CTX"
 		},
@@ -4208,7 +4221,7 @@
 				"Dealer"
 			],
 			"responses": [
-				":dealer: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Dealer  account. What's information that you need me to help with?"
+				"Happy birthday A+ !!! :birthday: \n\r Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of :dealer: DEALER.COM  account.  \n\r What's information that you need me to help with?"
 			],
 			"context_set": "DEALER_CTX"
 		},
@@ -4504,7 +4517,7 @@
 				"I want to know about their favorite activities"
 			],
 			"responses": [
-				"Eat all the time \\n Sweet people eat sweet things :sweet_potato: :pizza:"
+				"Eat all the time \n\r Sweet people eat sweet things :sweet_potato: :pizza:"
 			],
 			"context_filter": "DEALER_CTX"
 		},
@@ -4524,7 +4537,7 @@
 				"Can you give me favorite activities of Dealer  team?"
 			],
 			"responses": [
-				"Eat all the time \\n Sweet people eat sweet things :sweet_potato: :pizza:"
+				"Eat all the time \n\r Sweet people eat sweet things :sweet_potato: :pizza:"
 			],
 			"context_set": "DEALER_CTX"
 		},
@@ -4546,7 +4559,7 @@
 				"Tell me about the team fun fact"
 			],
 			"responses": [
-				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \\n The Standard of Beauty \\n You can call us dear (sweet people) - 'dear' is short for 'dealer'! \\n 'DDC' means Du Dep Chua? \\n 'DR' means Dep Roi!"
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \n\r The Standard of Beauty \n\r You can call us dear (sweet people) - 'dear' is short for 'dealer'! \n\r 'DDC' means Du Dep Chua? \n\r 'DR' means Dep Roi!"
 			],
 			"context_filter": "DEALER_CTX"
 		},
@@ -4563,7 +4576,7 @@
 				"Is there any fun fact in Dealer  account?"
 			],
 			"responses": [
-				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \\n The Standard of Beauty \\n You can call us dear (sweet people) - 'dear' is short for 'dealer'! \\n 'DDC' means Du Dep Chua? \\n 'DR' means Dep Roi!"
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \n\r The Standard of Beauty \n\r You can call us dear (sweet people) - 'dear' is short for 'dealer'! \n\r 'DDC' means Du Dep Chua? \n\r 'DR' means Dep Roi!"
 			],
 			"context_set": "DEALER_CTX"
 		},
