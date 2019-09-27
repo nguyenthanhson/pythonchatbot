@@ -93,6 +93,8 @@ class Prediction:
             print('First time I see you!!!')
             Prediction.db.insert({'userID': userID, 'context': ''})
         results = self.classify(sentence)
+        print ('score', results[0][1])
+        
         # if we have a classification then find the matching intent tag
         if results:
             for result in results:
@@ -107,7 +109,7 @@ class Prediction:
             while results:
                 for i in self.data["intents"]:
                     # find a tag matching the first result
-                    if i['tag'] == results[0][0]:
+                    if i['tag'] == results[0][0] and results[0][1] > 0.25:
                         if 'context_set' in i:
                             if show_details: print ('context:', i['context_set'])
                             Prediction.db.update({'context': i['context_set']}, Query().userID == userID)
