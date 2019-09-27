@@ -16,7 +16,7 @@ wordnet_lemmatizer = WordNetLemmatizer()
 nltk.download('punkt')
 nltk.download('wordnet')
 
-ERROR_THRESHOLD = 0.25
+ERROR_THRESHOLD = 0.05
 class Prediction:
     # This class is mainly used to predict the answer from user's question. 
     # It need below informations:
@@ -61,8 +61,8 @@ class Prediction:
         bag = [0 for _ in range(len(self.words))]
 
         s_words = nltk.word_tokenize(s)
-        #s_words = [stemmer.stem(word.lower()) for word in s_words]
-        s_words = [wordnet_lemmatizer.lemmatize(word) for word in s_words]
+        s_words = [stemmer.stem(word.lower()) for word in s_words]
+        #s_words = [wordnet_lemmatizer.lemmatize(word) for word in s_words]
 
         print('questions: {}'.format(s_words))
         for se in s_words:
