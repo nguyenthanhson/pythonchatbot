@@ -1,6 +1,193 @@
 {
 	"intents": [
 		{
+			"tag": "greeting with Hello",
+			"patterns": [
+				"Hi",
+				"Hello",
+				"Hey",
+				"Hey there",
+				"Hey man",
+				"Hiya",
+				"Halo",
+				"Hola",
+				"Is anyone there?",
+				"Good day",
+				"Nice day",
+				"Good morning",
+				"Good afternoon",
+				"Good Evening",
+				"Ciao"
+			],
+			"responses": [
+				"Hello, sunshine :sunflower:! How are you?",
+				"What's up, bae? You are making the temperatures soar this season! :sunny:",
+				"Hey bae! I am blinded by your charm! :heart_eyes_cat:",
+				"Ciao, Edith here. I've had my coffee already :coffee: and waiting for your questions",
+				"LOOK :eyes:! What gorgeous sculpture is here :heart_eyes_cat:. "
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "greeting with Seeing",
+			"patterns": [
+				"Nice to meet you",
+				"Pleased to meet you",
+				"Good to see you",
+				"It's great to see you",
+				"Nice to see you"
+			],
+			"responses": [
+				"You made my day by giving me a glimpse of yourself! :rose::rose::rose:",
+				"You just brightened up my day!"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "greeting with Who",
+			"patterns": [
+				"who are you?",
+				"who're you?"
+			],
+			"responses": [
+				"I am beautiful Edith. Are you an angel :female_fairy:",
+				"I am beautiful Edith. Who are you, gorgeous? :heart:"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "greeting with how",
+			"patterns": [
+				"How are you",
+				"How is it going?",
+				"How's everything?",
+				"Howdy",
+				"your feeling today?"
+			],
+			"responses": [
+				"Much better now that you are with me",
+				"My lawyer says I don't have to answer that question but my doctor said I'd live",
+				"Better now that I'm talking to you",
+				"Well, I haven't had my morning coffee yet and no one has gotten hurt, so I'd say 'pretty good' at this point in time."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "greeting with what",
+			"patterns": [
+				"What is going on?",
+				"What is up?"
+			],
+			"responses": [
+				"I wasn't feeling good until you spoke to me",
+				"Nice try! Now could you please empty your pockets? I'm definitely sure you just stole my heart.",
+				"I was daydreaming until you came and made it a reality",
+				"I'm busy, but do you want me to add you to my to-do list? ("
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "greeting with what-doing",
+			"patterns": [
+				"What are you doing?"
+			],
+			"responses": [
+				"I'm on this mission to stop thinking about you. It's called: Mission impossible!",
+				"Just Smile Like an Idiot and thinking about you"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"Bye",
+				"See you later",
+				"See you",
+				"Goodbye",
+				"Good day",
+				"Take care",
+				"Later",
+				"Keep in touch"
+			],
+			"responses": [
+				"Good day. I hope you are doing well today",
+				"Catch you later, bae :sunglasses:",
+				"I start to look forward to our next meeting :kissing_heart:",
+				"Well... I hate long goodbyes...:face_with_rolling_eyes:"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "thanks",
+			"patterns": [
+				"Thanks",
+				"Thank you",
+				"That's helpful",
+				"Thanks so much",
+				"Thanks a lot",
+				"Thanks a bunch",
+				"Thanks a ton",
+				"I really appreciate it",
+				"You're the best"
+			],
+			"responses": [
+				"Know that you know that I know that you know that I just wanted to say Happy to talk to you! :gift_heart:",
+				"I'm happy to help. You = grateful, Me = awesome. :hearts:",
+				"My pleasure, if I had a dollar for every time you said Thank, I would be rich! :money_with_wings:",
+				"This is easy, I can do it, and it doesn't pose any problems"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "FEELINGS",
+			"patterns": [
+				"feeling?",
+				"Are you Ok?",
+				"Do you want to talk ",
+				"What's the matter?",
+				"Is everything alright?"
+			],
+			"responses": [
+				"It's been a difficult day. People are talking too loud. Please keep silent. Let me think before answer all of your questions. I need a :taco: from BU head",
+				"I'm very happy right now. I need a :taco: from BU Head to get started"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "BU-HEAD",
+			"patterns": [
+				"your boss",
+				"your BU head?",
+				"our boss?",
+				"your master",
+				"short hair",
+				"who is Mai Le",
+				"our BU head"
+			],
+			"responses": [
+				"She is Mai Le, She deserves To Be Kissed By Zac Effron or Jason Statham. However she is stingy to share :taco: for her members. I'll never give her a :taco:"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "BUAPlus",
+			"patterns": [
+				"How many projects in APlus BU?",
+				"How many accounts in A+ BU",
+				"How many accounts in Aplus BU",
+				"Do you know about APlus?",
+				"Do you know about A+?",
+				"How many projects in A+ BU",
+				"How many resources in BU A+ ",
+				"How many resources in APlus BU",
+				"Could you please give me the location of A+ BU?"
+			],
+			"responses": [
+				"A+ BU has 8 accounts : Cox(KBB, Dealer.com, Autotrader), Monetate, KIBO, CareLogistics,  Agreement Express, Medidata, CloudHMS, BabySharks. We all stay at Floor 4 &Floor 5, TV office. The number of resources is around 170 and it has been changed frequenly so please ask beautiful girl - Ha Phan to have an update"
+			],
+			"context_set": ""
+		},
+		{
 			"tag": "KIBO",
 			"patterns": [
 				"Kibo info",
@@ -13,7 +200,7 @@
 				"Kibo"
 			],
 			"responses": [
-				"We can help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Kibo account. What's information that you need me to help with?"
+				":kibo: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Kibo account. What's information that you need me to help with?"
 			],
 			"context_set": "KIBO_CTX"
 		},
@@ -24,16 +211,26 @@
 				"Address of its office?",
 				"where is the Client's office",
 				"Location of Client's office",
-				"where in US?",
+				"where is it in US?",
 				"can you give me its address?",
-				"can you give me the address of this account?"
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
 			],
 			"responses": [
 				"717 N Harwood St STE 1900, Dallas, TX 75201, USA"
 			],
 			"context_filter": "KIBO_CTX"
 		},
-		
 		{
 			"tag": "KIBO_ADDRESS_DIRECT",
 			"patterns": [
@@ -43,7 +240,8 @@
 				"Location of Kibo's office",
 				"where in US?",
 				"can you give me Kibo address?",
-				"can you give me the address of Kibo account?"
+				"can you give me the address of Kibo account?",
+				"Kibo address"
 			],
 			"responses": [
 				"717 N Harwood St STE 1900, Dallas, TX 75201, USA"
@@ -58,7 +256,16 @@
 				"in which field it is working on",
 				"business field of this account",
 				"its business?",
-				"its domain"
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
 			],
 			"responses": [
 				"Provides eCommerce platform, services and expertise designed specifically for mid to upper tier retailers"
@@ -73,10 +280,310 @@
 				"in which field Kibo is working on",
 				"business field of Kibo project",
 				"Kibo bussiness?",
-				"Kibo domain?"
+				"Kibo domain?",
+				"I want to know about the Kibo bussiness domain?",
+				"Kibo domain"
 			],
 			"responses": [
 				"Provides eCommerce platform, services and expertise designed specifically for mid to upper tier retailers"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://kibocommerce.com/"
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Kibo url",
+				"Kibo website url",
+				"do Kibo have a website",
+				"where can find more information about Kibo account?",
+				"kibo website please?",
+				"Kibo website?",
+				"can you give me Kibo website?",
+				"can you give me Kibo webpage?",
+				"Kibo website"
+			],
+			"responses": [
+				"https://kibocommerce.com/"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"Jan 1, 2010"
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Kibo begin?",
+				"The start date of Kibo project?",
+				"When does Kibo start?",
+				"Kibo Start date?",
+				"Kibo Begin on?",
+				"Could you give me Kibo start date?",
+				"The first day of Kibo project?",
+				"The day of Kibo begining?",
+				"Can you give me Kibo team start date?",
+				"Can you give me Kibo start date?",
+				"Kibo beginning date"
+			],
+			"responses": [
+				"Jan 1, 2010"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"20"
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Kibo project?",
+				"How many members in Kibo acount?",
+				"How many members in Kibo?",
+				"How many people are there in Kibo?",
+				"How many people in Kibo project?",
+				"How many people are working in Kibo acount?",
+				"How many people in Kibo team?",
+				"Kibo Number of members?",
+				"can you give me the number of members Kibo team?",
+				"could you please give me how many members in Kibo team?",
+				"Kibo team size",
+				"how many Kibo resources?",
+				"Kibo resources"
+			],
+			"responses": [
+				"20"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Kibo team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"5th floor _ TV office"
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Kibo offshore team located in KMS?",
+				"Where can I find Kibo team?",
+				"Where is this Kibo account located?",
+				"Where is this Kibo project located?",
+				"Which floor Kibo team located?",
+				"which floor does Kibo located?",
+				"Kibo on which floor?",
+				"where is Kibo team are seating?",
+				"could you please give me the location of Kibo team?",
+				"can you give me Kibo location?",
+				"Kibo floor?",
+				"KMS office",
+				"where is Kibo in KMS office",
+				"where can I find Kibo in KMS office",
+				"where can I find Kibo in Viet Nam office",
+				"where can I find Kibo in VN office"
+			],
+			"responses": [
+				"5th floor _ TV office"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"Eating, Shopping, Playing PES and Boarding Games, Monthly birthday party & gift unpack :birthday:"
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Kibo team?",
+				"any activities in Kibo team?",
+				"Kibo Favorite activities?",
+				"What are Kibo favorite activities?",
+				"What are the favorite activities of Kibo?",
+				"Does Kibo have any favorite activity?",
+				"Kibo Activities?",
+				"Kibo Activity?",
+				"Kibo Favorite activity?",
+				"Any thing nice in Kibo team?",
+				"Can you give me favorite activities of Kibo team?"
+			],
+			"responses": [
+				"Eating, Shopping, Playing PES and Boarding Games, Monthly birthday party & gift unpack :birthday:"
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"Kibo needs food, loves food... :hamburger: So plz give us food. You want to hear a story, just come to Qui (Huy Dang) :stuck_out_tongue_winking_eye:, an amazing_humorous_forever looped_story teller "
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Kibo project?",
+				"Any fun in Kibo project?",
+				"Any fact in Kibo?",
+				"Kibo fun fact?",
+				"if Kibo is fun?",
+				"tell me some stories of Kibo project?",
+				"anything fun in Kibo team?",
+				"Is there any fun fact in Kibo account?"
+			],
+			"responses": [
+				"Kibo needs food, loves food... :hamburger: So plz give us food. You want to hear a story, just come to Qui (Huy Dang) :stuck_out_tongue_winking_eye:, an amazing_humorous_forever looped_story teller "
+			],
+			"context_set": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :kibo:"
+			],
+			"context_filter": "KIBO_CTX"
+		},
+		{
+			"tag": "KIBO_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Kibo project?",
+				"How about Kibo logo",
+				"let me know Kibo logo",
+				"provide me Kibo logo",
+				"can you send me Kibo logo"
+			],
+			"responses": [
+				"Here it is :kibo:"
 			],
 			"context_set": "KIBO_CTX"
 		},
@@ -86,14 +593,14 @@
 				"Monetate info",
 				"Monetate information",
 				"Monetate concern",
-				"I have some questions about Monetate project",
+				"I have some questions about MONETATE project",
 				"help with Monetate account",
 				"Monetate project",
 				"Monetate account",
 				"Monetate"
 			],
 			"responses": [
-				"We can help you about Address, the Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Monetate account. What's information that you need me to help with? "
+				":monetate:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Monetate account. What's information that you need me to help with?"
 			],
 			"context_set": "MONETATE_CTX"
 		},
@@ -104,9 +611,20 @@
 				"Address of its office?",
 				"where is the Client's office",
 				"Location of Client's office",
-				"where in US?",
+				"where is it in US?",
 				"can you give me its address?",
-				"can you give me the address of this account?"
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
 			],
 			"responses": [
 				"27 E 28th St 8th Floor, New York, NY 10016, USA"
@@ -122,7 +640,8 @@
 				"Location of Monetate's office",
 				"where in US?",
 				"can you give me Monetate address?",
-				"can you give me the address of Monetate account?"
+				"can you give me the address of Monetate account?",
+				"Monetate address"
 			],
 			"responses": [
 				"27 E 28th St 8th Floor, New York, NY 10016, USA"
@@ -137,7 +656,16 @@
 				"in which field it is working on",
 				"business field of this account",
 				"its business?",
-				"its domain"
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
 			],
 			"responses": [
 				"Marketing Platform, Enterprise Software, Internet, Test and Measurement"
@@ -152,12 +680,3920 @@
 				"in which field Monetate is working on",
 				"business field of Monetate project",
 				"Monetate bussiness?",
-				"Monetate domain?"
+				"Monetate domain?",
+				"I want to know about the Monetate bussiness domain?",
+				"Monetate domain"
 			],
 			"responses": [
 				"Marketing Platform, Enterprise Software, Internet, Test and Measurement"
 			],
 			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://monetate.com/"
+			],
+			"context_filter": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Monetate url",
+				"Monetate website url",
+				"do Monetate have a website",
+				"where can find more information about Monetate account?",
+				"Monetate website please?",
+				"Monetate website?",
+				"can you give me Monetate website?",
+				"can you give me Monetate webpage?",
+				"Monetate website"
+			],
+			"responses": [
+				"https://monetate.com/"
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"Oct 22, 2018"
+			],
+			"context_filter": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Monetate begin?",
+				"The start date of Monetate project?",
+				"When does Monetate start?",
+				"Monetate Start date?",
+				"Monetate Begin on?",
+				"Could you give me Monetate start date?",
+				"The first day of Monetate project?",
+				"The day of Monetate begining?",
+				"Can you give me Monetate team start date?",
+				"Can you give me Monetate start date?",
+				"Monetate beginning date"
+			],
+			"responses": [
+				"Oct 22, 2018"
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"3"
+			],
+			"context_filter": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Monetate project?",
+				"How many members in Monetate acount?",
+				"How many members in Monetate?",
+				"How many people are there in Monetate?",
+				"How many people in Monetate project?",
+				"How many people are working in Monetate acount?",
+				"How many people in Monetate team?",
+				"Monetate Number of members?",
+				"can you give me the number of members Monetate team?",
+				"could you please give me how many members in Monetate team?",
+				"Monetate team size",
+				"how many resources in Monetate?",
+				"resources in Monetate"
+			],
+			"responses": [
+				"3"
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Monetate team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_filter": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Monetate offshore team located in KMS?",
+				"Where can I find Monetate team?",
+				"Where is this Monetate account located?",
+				"Where is this Monetate project located?",
+				"Which floor Monetate team located?",
+				"which floor does Monetate located?",
+				"Monetate on which floor?",
+				"where is Monetate team are seating?",
+				"could you please give me the location of Monetate team?",
+				"can you give me Monetate location?",
+				"Monetate floor?",
+				"KMS office",
+				"where is Monetate in KMS office",
+				"where can I find Monetate in KMS office",
+				"where can I find Monetate in Viet Nam office",
+				"where can I find Monetate in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"work together, drink together, eat together :tea:"
+			],
+			"context_filter": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Monetate team?",
+				"any activities in Monetate team?",
+				"Monetate Favorite activities?",
+				"What are Monetate favorite activities?",
+				"What are the favorite activities of Monetate?",
+				"Does Monetate have any favorite activity?",
+				"Monetate Activities?",
+				"Monetate Activity?",
+				"Monetate Favorite activity?",
+				"Any thing nice in Monetate team?",
+				"Can you give me favorite activities of Monetate team?"
+			],
+			"responses": [
+				"work together, drink together, eat together :tea:"
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"all beautiful people here! :heart_eyes:"
+			],
+			"context_filter": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Monetate project?",
+				"Any fun in Monetate project?",
+				"Any fact in Monetate?",
+				"Monetate fun fact?",
+				"if Monetate is fun?",
+				"tell me some stories of Monetate project?",
+				"anything fun in Monetate team?",
+				"Is there any fun fact in Monetate account?"
+			],
+			"responses": [
+				"all beautiful people here! :heart_eyes:"
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is : :monetate:"
+			],
+			"context_filter": "MONETATE_CTX"
+		},
+		{
+			"tag": "MONETATE_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Monetate project?",
+				"How about Monetate logo",
+				"let me know Monetate logo",
+				"provide me Monetate logo",
+				"can you send me Monetate logo"
+			],
+			"responses": [
+				"Here it is : :monetate:"
+			],
+			"context_set": "MONETATE_CTX"
+		},
+		{
+			"tag": "MEDIDATA",
+			"patterns": [
+				"Medidata info",
+				"Medidata information",
+				"Medidata concern",
+				"I have some questions about MEDIDATA project",
+				"help with Medidata account",
+				"Medidata project",
+				"Medidata account",
+				"Medidata"
+			],
+			"responses": [
+				":medidata:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Medidata account. What's information that you need me to help with?"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"350 Hudson Street, New York, NY 10014, USA"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Medidata address?",
+				"Address of Medidata office?",
+				"where is the Medidata's office in US",
+				"Location of Medidata's office",
+				"where in US?",
+				"can you give me Medidata address?",
+				"can you give me the address of Medidata account?",
+				"Medidata address"
+			],
+			"responses": [
+				"350 Hudson Street, New York, NY 10014, USA"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"Healthcare :female-doctor:"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Medidata business domain?",
+				"Medidata domain knowledge?",
+				"in which field Medidata is working on",
+				"business field of Medidata project",
+				"Medidata bussiness?",
+				"Medidata domain?",
+				"I want to know about the Medidata bussiness domain?",
+				"Medidata domain"
+			],
+			"responses": [
+				"Healthcare :female-doctor:"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://www.medidata.com/en/"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Medidata url",
+				"Medidata website url",
+				"do Medidata have a website",
+				"where can find more information about Medidata account?",
+				"Medidata website please?",
+				"Medidata website?",
+				"can you give me Medidata website?",
+				"can you give me Medidata webpage?",
+				"Medidata website"
+			],
+			"responses": [
+				"https://www.medidata.com/en/"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"Aug 5, 2019"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Medidata begin?",
+				"The start date of Medidata project?",
+				"When does Medidata start?",
+				"Medidata Start date?",
+				"Medidata Begin on?",
+				"Could you give me Medidata start date?",
+				"The first day of Medidata project?",
+				"The day of Medidata begining?",
+				"Can you give me Medidata team start date?",
+				"Can you give me Medidata start date?",
+				"Medidata beginning date"
+			],
+			"responses": [
+				"Aug 5, 2019"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"2"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Medidata project?",
+				"How many members in Medidata acount?",
+				"How many members in Medidata?",
+				"How many people are there in Medidata?",
+				"How many people in Medidata project?",
+				"How many people are working in Medidata acount?",
+				"How many people in Medidata team?",
+				"Medidata Number of members?",
+				"can you give me the number of members Medidata team?",
+				"could you please give me how many members in Medidata team?",
+				"Medidata team size",
+				"how many resources in Medidata?",
+				"Medidata resources"
+			],
+			"responses": [
+				"2"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Medidata team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Medidata offshore team located in KMS?",
+				"Where can I find Medidata team?",
+				"Where is this Medidata account located?",
+				"Where is this Medidata project located?",
+				"Which floor Medidata team located?",
+				"which floor does Medidata located?",
+				"Medidata on which floor?",
+				"where is Medidata team are seating?",
+				"could you please give me the location of Medidata team?",
+				"can you give me Medidata location?",
+				"Medidata floor?",
+				"KMS office",
+				"where is Medidata in KMS office",
+				"where can I find Medidata in KMS office",
+				"where can I find Medidata in Viet Nam office",
+				"where can I find Medidata in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"drinking, singing & exploring new technology ::beers:"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Medidata team?",
+				"any activities in Medidata team?",
+				"Medidata Favorite activities?",
+				"What are Medidata favorite activities?",
+				"What are the favorite activities of Medidata?",
+				"Does Medidata have any favorite activity?",
+				"Medidata Activities?",
+				"Medidata Activity?",
+				"Medidata Favorite activity?",
+				"Any thing nice in Medidata team?",
+				"Can you give me favorite activities of Medidata team?"
+			],
+			"responses": [
+				"drinking, singing & exploring new technology ::beers:"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"drinking, singing & exploring new technology ::beers:"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Medidata project?",
+				"Any fun in Medidata project?",
+				"Any fact in Medidata?",
+				"Medidata fun fact?",
+				"if Medidata is fun?",
+				"tell me some stories of Medidata project?",
+				"anything fun in Medidata team?",
+				"Is there any fun fact in Medidata account?"
+			],
+			"responses": [
+				"drinking, singing & exploring new technology ::beers:"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :medidata:"
+			],
+			"context_filter": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "MEDIDATA_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Medidata project?",
+				"How about Medidata logo",
+				"let me know Medidata logo",
+				"provide me Medidata logo",
+				"can you send me Medidata logo"
+			],
+			"responses": [
+				"Here it is :medidata:"
+			],
+			"context_set": "MEDIDATA_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS",
+			"patterns": [
+				"Care Logistics info",
+				"Care Logistics information",
+				"Care Logistics concern",
+				"I have some questions about CARE_LOGISTICS project",
+				"help with Care Logistics account",
+				"Care Logistics project",
+				"Care Logistics account",
+				"Care Logistics"
+			],
+			"responses": [
+				":carelogistics:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Care Logistics account. What's information that you need me to help with?"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"27 E 28th St 8th Floor, New York, NY 10016, USA"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Care Logistics address?",
+				"Address of Care Logistics office?",
+				"where is the Care Logistics's office in US",
+				"Location of Care Logistics's office",
+				"where in US?",
+				"can you give me Care Logistics address?",
+				"can you give me the address of Care Logistics account?",
+				"Care Logistics address"
+			],
+			"responses": [
+				"27 E 28th St 8th Floor, New York, NY 10016, USA"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"Marketing Platform, Enterprise Software, Internet, Test and Measurement"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Care Logistics business domain?",
+				"Care Logistics domain knowledge?",
+				"in which field Care Logistics is working on",
+				"business field of Care Logistics project",
+				"Care Logistics bussiness?",
+				"Care Logistics domain?",
+				"I want to know about the Care Logistics bussiness domain?",
+				"Care Logistics domain"
+			],
+			"responses": [
+				"Marketing Platform, Enterprise Software, Internet, Test and Measurement"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://carelogistics.com/"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Care Logistics url",
+				"Care Logistics website url",
+				"do Care Logistics have a website",
+				"where can find more information about Care Logistics account?",
+				"Care Logistics website please?",
+				"Care Logistics website?",
+				"can you give me Care Logistics website?",
+				"can you give me Care Logistics webpage?",
+				"Care Logistics website"
+			],
+			"responses": [
+				"https://carelogistics.com/"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"Oct 22, 2018"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Care Logistics begin?",
+				"The start date of Care Logistics project?",
+				"When does Care Logistics start?",
+				"Care Logistics Start date?",
+				"Care Logistics Begin on?",
+				"Could you give me Care Logistics start date?",
+				"The first day of Care Logistics project?",
+				"The day of Care Logistics begining?",
+				"Can you give me Care Logistics team start date?",
+				"Can you give me Care Logistics start date?",
+				"Care Logistics beginning date"
+			],
+			"responses": [
+				"Oct 22, 2018"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"3"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Care Logistics project?",
+				"How many members in Care Logistics acount?",
+				"How many members in Care Logistics?",
+				"How many people are there in Care Logistics?",
+				"How many people in Care Logistics project?",
+				"How many people are working in Care Logistics acount?",
+				"How many people in Care Logistics team?",
+				"Care Logistics Number of members?",
+				"can you give me the number of members Care Logistics team?",
+				"could you please give me how many members in Care Logistics team?",
+				"Care Logistics team size",
+				"how many resources in Care Logistics?",
+				"Care Logistics resources"
+			],
+			"responses": [
+				"3"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Care Logistics team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Care Logistics offshore team located in KMS?",
+				"Where can I find Care Logistics team?",
+				"Where is this Care Logistics account located?",
+				"Where is this Care Logistics project located?",
+				"Which floor Care Logistics team located?",
+				"which floor does Care Logistics located?",
+				"Care Logistics on which floor?",
+				"where is Care Logistics team are seating?",
+				"could you please give me the location of Care Logistics team?",
+				"can you give me Care Logistics location?",
+				"Care Logistics floor?",
+				"KMS office",
+				"where is Care Logistics in KMS office",
+				"where can I find Care Logistics in KMS office",
+				"where can I find Care Logistics in Viet Nam office",
+				"where can I find Care Logistics in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Care Logistics team?",
+				"any activities in Care Logistics team?",
+				"Care Logistics Favorite activities?",
+				"What are Care Logistics favorite activities?",
+				"What are the favorite activities of Care Logistics?",
+				"Does Care Logistics have any favorite activity?",
+				"Care Logistics Activities?",
+				"Care Logistics Activity?",
+				"Care Logistics Favorite activity?",
+				"Any thing nice in Care Logistics team?",
+				"Can you give me favorite activities of Care Logistics team?"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"drink bubble tea & eat food :tropical_drink:"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Care Logistics project?",
+				"Any fun in Care Logistics project?",
+				"Any fact in Care Logistics?",
+				"Care Logistics fun fact?",
+				"if Care Logistics is fun?",
+				"tell me some stories of Care Logistics project?",
+				"anything fun in Care Logistics team?",
+				"Is there any fun fact in Care Logistics account?"
+			],
+			"responses": [
+				"drink bubble tea & eat food :tropical_drink:"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :carelogistics:"
+			],
+			"context_filter": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CARE_LOGISTICS_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Care Logistics project?",
+				"How about Care Logistics logo",
+				"let me know Care Logistics logo",
+				"provide me Care Logistics logo",
+				"can you send me Care Logistics logo"
+			],
+			"responses": [
+				"Here it is :carelogistics:"
+			],
+			"context_set": "CARE_LOGISTICS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS",
+			"patterns": [
+				"Cloud HMS info",
+				"Cloud HMS information",
+				"Cloud HMS concern",
+				"I have some questions about CLOUDHMS project",
+				"help with Cloud HMS account",
+				"Cloud HMS project",
+				"Cloud HMS account",
+				"Cloud HMS"
+			],
+			"responses": [
+				":cloudhms:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Cloud HMS account. What's information that you need me to help with?"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"ETOWN Central, Floor 24th, 11 Doan Van Bo, District 4, HCMC"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Cloud HMS address?",
+				"Address of Cloud HMS office?",
+				"where is the Cloud HMS's office in US",
+				"Location of Cloud HMS's office",
+				"where in US?",
+				"can you give me Cloud HMS address?",
+				"can you give me the address of Cloud HMS account?",
+				"Cloud HMS address"
+			],
+			"responses": [
+				"ETOWN Central, Floor 24th, 11 Doan Van Bo, District 4, HCMC"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"Hospitality"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Cloud HMS business domain?",
+				"Cloud HMS domain knowledge?",
+				"in which field Cloud HMS is working on",
+				"business field of Cloud HMS project",
+				"Cloud HMS bussiness?",
+				"Cloud HMS domain?",
+				"I want to know about the Cloud HMS bussiness domain?",
+				"Cloud HMS domain"
+			],
+			"responses": [
+				"Hospitality"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"Sorry I'm not sure about its website"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Cloud HMS url",
+				"Cloud HMS website url",
+				"do Cloud HMS have a website",
+				"where can find more information about Cloud HMS account?",
+				"Cloud HMS website please?",
+				"Cloud HMS website?",
+				"can you give me Cloud HMS website?",
+				"can you give me Cloud HMS webpage?",
+				"Cloud HMS website"
+			],
+			"responses": [
+				"Sorry I'm not sure about its website"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"June 10, 2019"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Cloud HMS begin?",
+				"The start date of Cloud HMS project?",
+				"When does Cloud HMS start?",
+				"Cloud HMS Start date?",
+				"Cloud HMS Begin on?",
+				"Could you give me Cloud HMS start date?",
+				"The first day of Cloud HMS project?",
+				"The day of Cloud HMS begining?",
+				"Can you give me Cloud HMS team start date?",
+				"Can you give me Cloud HMS start date?",
+				"Cloud HMS beginning date"
+			],
+			"responses": [
+				"June 10, 2019"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"18+ (you know what I mean?) :grin:"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Cloud HMS project?",
+				"How many members in Cloud HMS acount?",
+				"How many members in Cloud HMS?",
+				"How many people are there in Cloud HMS?",
+				"How many people in Cloud HMS project?",
+				"How many people are working in Cloud HMS acount?",
+				"How many people in Cloud HMS team?",
+				"Cloud HMS Number of members?",
+				"can you give me the number of members Cloud HMS team?",
+				"could you please give me how many members in Cloud HMS team?",
+				"Cloud HMS team size",
+				"how many resources in Cloud HMS?",
+				"Clould HMS resources"
+			],
+			"responses": [
+				"18+ (you know what I mean?) :grin:"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Cloud HMS team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Cloud HMS offshore team located in KMS?",
+				"Where can I find Cloud HMS team?",
+				"Where is this Cloud HMS account located?",
+				"Where is this Cloud HMS project located?",
+				"Which floor Cloud HMS team located?",
+				"which floor does Cloud HMS located?",
+				"Cloud HMS on which floor?",
+				"where is Cloud HMS team are seating?",
+				"could you please give me the location of Cloud HMS team?",
+				"can you give me Cloud HMS location?",
+				"Cloud HMS floor?",
+				"KMS office",
+				"where is Cloud HMS in KMS office",
+				"where can I find Cloud HMS in KMS office",
+				"where can I find Cloud HMS in Viet Nam office",
+				"where can I find Cloud HMS in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Cloud HMS team?",
+				"any activities in Cloud HMS team?",
+				"Cloud HMS Favorite activities?",
+				"What are Cloud HMS favorite activities?",
+				"What are the favorite activities of Cloud HMS?",
+				"Does Cloud HMS have any favorite activity?",
+				"Cloud HMS Activities?",
+				"Cloud HMS Activity?",
+				"Cloud HMS Favorite activity?",
+				"Any thing nice in Cloud HMS team?",
+				"Can you give me favorite activities of Cloud HMS team?"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"Do you want to practice Vietnamese? :yum: Come join us! Do you want to work onsite regularly? Come join us! :rolling_on_the_floor_laughing:"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Cloud HMS project?",
+				"Any fun in Cloud HMS project?",
+				"Any fact in Cloud HMS?",
+				"Cloud HMS fun fact?",
+				"if Cloud HMS is fun?",
+				"tell me some stories of Cloud HMS project?",
+				"anything fun in Cloud HMS team?",
+				"Is there any fun fact in Cloud HMS account?"
+			],
+			"responses": [
+				"Do you want to practice Vietnamese? :yum: Come join us! Do you want to work onsite regularly? Come join us! :rolling_on_the_floor_laughing:"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :cloudhms:"
+			],
+			"context_filter": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "CLOUDHMS_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Cloud HMS project?",
+				"How about Cloud HMS logo",
+				"let me know Cloud HMS logo",
+				"provide me Cloud HMS logo",
+				"can you send me Cloud HMS logo"
+			],
+			"responses": [
+				"Here it is :cloudhms:"
+			],
+			"context_set": "CLOUDHMS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS",
+			"patterns": [
+				"Baby Sharks info",
+				"Baby Sharks information",
+				"Baby Sharks concern",
+				"I have some questions about BABYSHARKS project",
+				"help with Baby Sharks account",
+				"Baby Sharks project",
+				"Baby Sharks account",
+				"Baby Sharks"
+			],
+			"responses": [
+				":babysharks:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Baby Sharks account. What's information that you need me to help with?"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Baby Sharks address?",
+				"Address of Baby Sharks office?",
+				"where is the Baby Sharks's office in US",
+				"Location of Baby Sharks's office",
+				"where in US?",
+				"can you give me Baby Sharks address?",
+				"can you give me the address of Baby Sharks account?",
+				"Baby Sharks address"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Baby Sharks business domain?",
+				"Baby Sharks domain knowledge?",
+				"in which field Baby Sharks is working on",
+				"business field of Baby Sharks project",
+				"Baby Sharks bussiness?",
+				"Baby Sharks domain?",
+				"I want to know about the Baby Sharks bussiness domain?",
+				"Baby Sharks domain"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Baby Sharks url",
+				"Baby Sharks website url",
+				"do Baby Sharks have a website",
+				"where can find more information about Baby Sharks account?",
+				"Baby Sharks website please?",
+				"Baby Sharks website?",
+				"can you give me Baby Sharks website?",
+				"can you give me Baby Sharks webpage?",
+				"Baby Sharks website"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"August 2018"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Baby Sharks begin?",
+				"The start date of Baby Sharks project?",
+				"When does Baby Sharks start?",
+				"Baby Sharks Start date?",
+				"Baby Sharks Begin on?",
+				"Could you give me Baby Sharks start date?",
+				"The first day of Baby Sharks project?",
+				"The day of Baby Sharks begining?",
+				"Can you give me Baby Sharks team start date?",
+				"Can you give me Baby Sharks start date?",
+				"Baby Sharks beginning date"
+			],
+			"responses": [
+				"August 2018"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"Ramp up & down anytime :grin:"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Baby Sharks project?",
+				"How many members in Baby Sharks acount?",
+				"How many members in Baby Sharks?",
+				"How many people are there in Baby Sharks?",
+				"How many people in Baby Sharks project?",
+				"How many people are working in Baby Sharks acount?",
+				"How many people in Baby Sharks team?",
+				"Baby Sharks Number of members?",
+				"can you give me the number of members Baby Sharks team?",
+				"could you please give me how many members in Baby Sharks team?",
+				"Baby Sharks team size",
+				"how many resources in Baby Sharks?",
+				"Baby Sharks resources"
+			],
+			"responses": [
+				"Ramp up & down anytime :grin:"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Baby Sharks team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Baby Sharks offshore team located in KMS?",
+				"Where can I find Baby Sharks team?",
+				"Where is this Baby Sharks account located?",
+				"Where is this Baby Sharks project located?",
+				"Which floor Baby Sharks team located?",
+				"which floor does Baby Sharks located?",
+				"Baby Sharks on which floor?",
+				"where is Baby Sharks team are seating?",
+				"could you please give me the location of Baby Sharks team?",
+				"can you give me Baby Sharks location?",
+				"Baby Sharks floor?",
+				"KMS office",
+				"where is Baby Sharks in KMS office",
+				"where can I find Baby Sharks in KMS office",
+				"where can I find Baby Sharks in Viet Nam office",
+				"where can I find Baby Sharks in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Baby Sharks team?",
+				"any activities in Baby Sharks team?",
+				"Baby Sharks Favorite activities?",
+				"What are Baby Sharks favorite activities?",
+				"What are the favorite activities of Baby Sharks?",
+				"Does Baby Sharks have any favorite activity?",
+				"Baby Sharks Activities?",
+				"Baby Sharks Activity?",
+				"Baby Sharks Favorite activity?",
+				"Any thing nice in Baby Sharks team?",
+				"Can you give me favorite activities of Baby Sharks team?"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"learn, learn more, learn forever :book: :joy:"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Baby Sharks project?",
+				"Any fun in Baby Sharks project?",
+				"Any fact in Baby Sharks?",
+				"Baby Sharks fun fact?",
+				"if Baby Sharks is fun?",
+				"tell me some stories of Baby Sharks project?",
+				"anything fun in Baby Sharks team?",
+				"Is there any fun fact in Baby Sharks account?"
+			],
+			"responses": [
+				"learn, learn more, learn forever :book: :joy:"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :babysharks:"
+			],
+			"context_filter": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "BABYSHARKS_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Baby Sharks project?",
+				"How about Baby Sharks logo",
+				"let me know Baby Sharks logo",
+				"provide me Baby Sharks logo",
+				"can you send me Baby Sharks logo"
+			],
+			"responses": [
+				"Here it is :babysharks:"
+			],
+			"context_set": "BABYSHARKS_CTX"
+		},
+		{
+			"tag": "KBB",
+			"patterns": [
+				"KBB info",
+				"KBB information",
+				"KBB concern",
+				"I have some questions about KBB project",
+				"help with KBB account",
+				"KBB project",
+				"KBB account",
+				"KBB"
+			],
+			"responses": [
+				":kbb:! Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of KBB account. What's information that you need me to help with?"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"195 Technology Dr, Irvine, CA 92618, USA"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_ADDRESS_DIRECT",
+			"patterns": [
+				"What is KBB address?",
+				"Address of KBB office?",
+				"where is the KBB's office in US",
+				"Location of KBB's office",
+				"where in US?",
+				"can you give me KBB address?",
+				"can you give me the address of KBB account?",
+				"KBB address"
+			],
+			"responses": [
+				"195 Technology Dr, Irvine, CA 92618, USA"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"Automobile"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_DOMAIN_DIRECT",
+			"patterns": [
+				"What is KBB business domain?",
+				"KBB domain knowledge?",
+				"in which field KBB is working on",
+				"business field of KBB project",
+				"KBB bussiness?",
+				"KBB domain?",
+				"I want to know about the KBB bussiness domain?",
+				"KBB domain"
+			],
+			"responses": [
+				"Automobile"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://www.kbb.com/"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me KBB url",
+				"KBB website url",
+				"do KBB have a website",
+				"where can find more information about KBB account?",
+				"KBB website please?",
+				"KBB website?",
+				"can you give me KBB website?",
+				"can you give me KBB webpage?",
+				"KBB website"
+			],
+			"responses": [
+				"https://www.kbb.com/"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"Jan 1, 2014"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_STARTDATE_DIRECT",
+			"patterns": [
+				"When does KBB begin?",
+				"The start date of KBB project?",
+				"When does KBB start?",
+				"KBB Start date?",
+				"KBB Begin on?",
+				"Could you give me KBB start date?",
+				"The first day of KBB project?",
+				"The day of KBB begining?",
+				"Can you give me KBB team start date?",
+				"Can you give me KBB start date?",
+				"KBB beginning date"
+			],
+			"responses": [
+				"Jan 1, 2014"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"45"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in KBB project?",
+				"How many members in KBB acount?",
+				"How many members in KBB?",
+				"How many people are there in KBB?",
+				"How many people in KBB project?",
+				"How many people are working in KBB acount?",
+				"How many people in KBB team?",
+				"KBB Number of members?",
+				"can you give me the number of members KBB team?",
+				"could you please give me how many members in KBB team?",
+				"KBB team size",
+				"how many resources in KBB?",
+				"KBB resources"
+			],
+			"responses": [
+				"45"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is KBB team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"5th floor - TV office"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_LOCATION_DIRECT",
+			"patterns": [
+				"Where is KBB offshore team located in KMS?",
+				"Where can I find KBB team?",
+				"Where is this KBB account located?",
+				"Where is this KBB project located?",
+				"Which floor KBB team located?",
+				"which floor does KBB located?",
+				"KBB on which floor?",
+				"where is KBB team are seating?",
+				"could you please give me the location of KBB team?",
+				"can you give me KBB location?",
+				"KBB floor?",
+				"KMS office",
+				"where is KBB in KMS office",
+				"where can I find KBB in KMS office",
+				"where can I find KBB in Viet Nam office",
+				"where can I find KBB in VN office"
+			],
+			"responses": [
+				"5th floor - TV office"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"Learning - Sharing - Playing - Caring - Listening :star-struck: \\n Master of Cars, but have no any car :car: \\n Ranked the first in the number of Gay Boys \\n Eat, eat more, eat forever (Viva 'banh trang tron') \\n Young, strong & long fun \\n Gym everyday with special care from Muscle Boys"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of KBB team?",
+				"any activities in KBB team?",
+				"KBB Favorite activities?",
+				"What are KBB favorite activities?",
+				"What are the favorite activities of KBB?",
+				"Does KBB have any favorite activity?",
+				"KBB Activities?",
+				"KBB Activity?",
+				"KBB Favorite activity?",
+				"Any thing nice in KBB team?",
+				"Can you give me favorite activities of KBB team?"
+			],
+			"responses": [
+				"Learning - Sharing - Playing - Caring - Listening :star-struck: \\n Master of Cars, but have no any car :car: \\n Ranked the first in the number of Gay Boys \\n Eat, eat more, eat forever (Viva 'banh trang tron') \\n Young, strong & long fun \\n Gym everyday with special care from Muscle Boys"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \\n Stable COE audit rating of 4.3 \\n Nude Job (Nghiep Tran) is the face of every birth - month party :man_dancing: ... except his"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of KBB project?",
+				"Any fun in KBB project?",
+				"Any fact in KBB?",
+				"KBB fun fact?",
+				"if KBB is fun?",
+				"tell me some stories of KBB project?",
+				"anything fun in KBB team?",
+				"Is there any fun fact in KBB account?"
+			],
+			"responses": [
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \\n Stable COE audit rating of 4.3 \\n Nude Job (Nghiep Tran) is the face of every birth - month party :man_dancing: ... except his"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :kbb:"
+			],
+			"context_filter": "KBB_CTX"
+		},
+		{
+			"tag": "KBB_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of KBB project?",
+				"How about KBB logo",
+				"let me know KBB logo",
+				"provide me KBB logo",
+				"can you send me KBB logo"
+			],
+			"responses": [
+				"Here it is :kbb:"
+			],
+			"context_set": "KBB_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES",
+			"patterns": [
+				"Hot Schedules info",
+				"Hot Schedules information",
+				"Hot Schedules concern",
+				"I have some questions about HOTSCHEDULES project",
+				"help with Hot Schedules account",
+				"Hot Schedules project",
+				"Hot Schedules account",
+				"Hot Schedules"
+			],
+			"responses": [
+				":hotschedules: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Hot Schedules account. What's information that you need me to help with?"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"6504 Bridge Point Pkwy Ste 425, Austin, TX 78730, USA"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Hot Schedules address?",
+				"Address of Hot Schedules office?",
+				"where is the Hot Schedules's office in US",
+				"Location of Hot Schedules's office",
+				"where in US?",
+				"can you give me Hot Schedules address?",
+				"can you give me the address of Hot Schedules account?",
+				"Hot Schedules address"
+			],
+			"responses": [
+				"6504 Bridge Point Pkwy Ste 425, Austin, TX 78730, USA"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"Hospitality Management"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Hot Schedules business domain?",
+				"Hot Schedules domain knowledge?",
+				"in which field Hot Schedules is working on",
+				"business field of Hot Schedules project",
+				"Hot Schedules bussiness?",
+				"Hot Schedules domain?",
+				"I want to know about the Hot Schedules bussiness domain?",
+				"Hot Schedules domain"
+			],
+			"responses": [
+				"Hospitality Management"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://www.hotschedules.com/"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Hot Schedules url",
+				"Hot Schedules website url",
+				"do Hot Schedules have a website",
+				"where can find more information about Hot Schedules account?",
+				"hotschedules website please?",
+				"Hot Schedules website?",
+				"can you give me Hot Schedules website?",
+				"can you give me Hot Schedules webpage?",
+				"Hot Schedules website"
+			],
+			"responses": [
+				"https://www.hotschedules.com/"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"May 1, 2017 - End date: Sep 20, 2019"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Hot Schedules begin?",
+				"The start date of Hot Schedules project?",
+				"When does Hot Schedules start?",
+				"Hot Schedules Start date?",
+				"Hot Schedules Begin on?",
+				"Could you give me Hot Schedules start date?",
+				"The first day of Hot Schedules project?",
+				"The day of Hot Schedules begining?",
+				"Can you give me Hot Schedules team start date?",
+				"Can you give me Hot Schedules start date?",
+				"Hot Schedules beginning date"
+			],
+			"responses": [
+				"May 1, 2017 - End date: Sep 20, 2019"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"37"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Hot Schedules project?",
+				"How many members in Hot Schedules acount?",
+				"How many members in Hot Schedules?",
+				"How many people are there in Hot Schedules?",
+				"How many people in Hot Schedules project?",
+				"How many people are working in Hot Schedules acount?",
+				"How many people in Hot Schedules team?",
+				"Hot Schedules Number of members?",
+				"can you give me the number of members Hot Schedules team?",
+				"could you please give me how many members in Hot Schedules team?",
+				"Hot Schedules team size",
+				"how many Hot Schedules resources?",
+				"Hot Schedules resources"
+			],
+			"responses": [
+				"37"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Hot Schedules team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Hot Schedules offshore team located in KMS?",
+				"Where can I find Hot Schedules team?",
+				"Where is this Hot Schedules account located?",
+				"Where is this Hot Schedules project located?",
+				"Which floor Hot Schedules team located?",
+				"which floor does Hot Schedules located?",
+				"Hot Schedules on which floor?",
+				"where is Hot Schedules team are seating?",
+				"could you please give me the location of Hot Schedules team?",
+				"can you give me Hot Schedules location?",
+				"Hot Schedules floor?",
+				"KMS office",
+				"where is Hot Schedules in KMS office",
+				"where can I find Hot Schedules in KMS office",
+				"where can I find Hot Schedules in Viet Nam office",
+				"where can I find Hot Schedules in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Hot Schedules team?",
+				"any activities in Hot Schedules team?",
+				"Hot Schedules Favorite activities?",
+				"What are Hot Schedules favorite activities?",
+				"What are the favorite activities of Hot Schedules?",
+				"Does Hot Schedules have any favorite activity?",
+				"Hot Schedules Activities?",
+				"Hot Schedules Activity?",
+				"Hot Schedules Favorite activity?",
+				"Any thing nice in Hot Schedules team?",
+				"Can you give me favorite activities of Hot Schedules team?"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"The biggest project in KMS (140 members at peak time) :man-lifting-weights: \\n We have internal CEO team which means Chief Entertainment Officers"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Hot Schedules project?",
+				"Any fun in Hot Schedules project?",
+				"Any fact in Hot Schedules?",
+				"Hot Schedules fun fact?",
+				"if Hot Schedules is fun?",
+				"tell me some stories of Hot Schedules project?",
+				"anything fun in Hot Schedules team?",
+				"Is there any fun fact in Hot Schedules account?"
+			],
+			"responses": [
+				"The biggest project in KMS (140 members at peak time) :man-lifting-weights: \\n We have internal CEO team which means Chief Entertainment Officers"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :hotschedules:"
+			],
+			"context_filter": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "HOTSCHEDULES_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Hot Schedules project?",
+				"How about Hot Schedules logo",
+				"let me know Hot Schedules logo",
+				"provide me Hot Schedules logo",
+				"can you send me Hot Schedules logo"
+			],
+			"responses": [
+				"Here it is :hotschedules:"
+			],
+			"context_set": "HOTSCHEDULES_CTX"
+		},
+		{
+			"tag": "AUTOTRADER",
+			"patterns": [
+				"AutoTrader  info",
+				"AutoTrader  information",
+				"AutoTrader  concern",
+				"I have some questions about AutoTrader project",
+				"help with AutoTrader  account",
+				"AutoTrader  project",
+				"AutoTrader  account",
+				"AutoTrader",
+				"Auto Trader  info",
+				"Auto Trader  information",
+				"Auto Trader  concern",
+				"I have some questions about Auto Trader project",
+				"help with Auto Trader  account",
+				"Auto Trader  project",
+				"Auto Trader  account",
+				"Auto Trader"
+			],
+			"responses": [
+				":autotrader: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of AutoTrader  account. What's information that you need me to help with?"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"3003 Summit Blvd NE #200, Atlanta, GA 30319, USA"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_ADDRESS_DIRECT",
+			"patterns": [
+				"What is AutoTrader  address?",
+				"Address of AutoTrader  office?",
+				"where is the AutoTrader 's office in US",
+				"Location of AutoTrader 's office",
+				"where in US?",
+				"can you give me AutoTrader  address?",
+				"can you give me the address of AutoTrader  account?",
+				"AutoTrader  address"
+			],
+			"responses": [
+				"3003 Summit Blvd NE #200, Atlanta, GA 30319, USA"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"Automobile"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_DOMAIN_DIRECT",
+			"patterns": [
+				"What is AutoTrader  business domain?",
+				"AutoTrader  domain knowledge?",
+				"in which field AutoTrader  is working on",
+				"business field of AutoTrader  project",
+				"AutoTrader  bussiness?",
+				"AutoTrader  domain?",
+				"I want to know about the AutoTrader  bussiness domain?",
+				"AutoTrader  domain"
+			],
+			"responses": [
+				"Automobile"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://www.autotrader.com/"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me AutoTrader  url",
+				"AutoTrader  website url",
+				"do AutoTrader  have a website",
+				"where can find more information about AutoTrader  account?",
+				"autotrader website please?",
+				"AutoTrader  website?",
+				"can you give me AutoTrader  website?",
+				"can you give me AutoTrader  webpage?",
+				"AutoTrader  website"
+			],
+			"responses": [
+				"https://www.autotrader.com/"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"Jan 1, 2014"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_STARTDATE_DIRECT",
+			"patterns": [
+				"When does AutoTrader  begin?",
+				"The start date of AutoTrader  project?",
+				"When does AutoTrader  start?",
+				"AutoTrader  Start date?",
+				"AutoTrader  Begin on?",
+				"Could you give me AutoTrader  start date?",
+				"The first day of AutoTrader  project?",
+				"The day of AutoTrader  begining?",
+				"Can you give me AutoTrader  team start date?",
+				"Can you give me AutoTrader  start date?",
+				"AutoTrader  beginning date"
+			],
+			"responses": [
+				"Jan 1, 2014"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"7"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in AutoTrader  project?",
+				"How many members in AutoTrader  acount?",
+				"How many members in AutoTrader ?",
+				"How many people are there in AutoTrader ?",
+				"How many people in AutoTrader  project?",
+				"How many people are working in AutoTrader  acount?",
+				"How many people in AutoTrader  team?",
+				"AutoTrader  Number of members?",
+				"can you give me the number of members AutoTrader  team?",
+				"could you please give me how many members in AutoTrader  team?",
+				"AutoTrader  team size",
+				"how many AutoTrader  resources?",
+				"AutoTrader  resources"
+			],
+			"responses": [
+				"7"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is AutoTrader  team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"5th floor _ TV office"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_LOCATION_DIRECT",
+			"patterns": [
+				"Where is AutoTrader  offshore team located in KMS?",
+				"Where can I find AutoTrader  team?",
+				"Where is this AutoTrader  account located?",
+				"Where is this AutoTrader  project located?",
+				"Which floor AutoTrader  team located?",
+				"which floor does AutoTrader  located?",
+				"AutoTrader  on which floor?",
+				"where is AutoTrader  team are seating?",
+				"could you please give me the location of AutoTrader  team?",
+				"can you give me AutoTrader  location?",
+				"AutoTrader  floor?",
+				"KMS office",
+				"where is AutoTrader  in KMS office",
+				"where can I find AutoTrader  in KMS office",
+				"where can I find AutoTrader  in Viet Nam office",
+				"where can I find AutoTrader  in VN office"
+			],
+			"responses": [
+				"5th floor _ TV office"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of AutoTrader  team?",
+				"any activities in AutoTrader  team?",
+				"AutoTrader  Favorite activities?",
+				"What are AutoTrader  favorite activities?",
+				"What are the favorite activities of AutoTrader ?",
+				"Does AutoTrader  have any favorite activity?",
+				"AutoTrader  Activities?",
+				"AutoTrader  Activity?",
+				"AutoTrader  Favorite activity?",
+				"Any thing nice in AutoTrader  team?",
+				"Can you give me favorite activities of AutoTrader  team?"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) :kissing_heart: \\n AutoTrader is under the guardian of a friendly Autobot (Bumblebee)"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of AutoTrader  project?",
+				"Any fun in AutoTrader  project?",
+				"Any fact in AutoTrader ?",
+				"AutoTrader  fun fact?",
+				"if AutoTrader  is fun?",
+				"tell me some stories of AutoTrader  project?",
+				"anything fun in AutoTrader  team?",
+				"Is there any fun fact in AutoTrader  account?"
+			],
+			"responses": [
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) :kissing_heart: \\n AutoTrader is under the guardian of a friendly Autobot (Bumblebee)"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :autotrader:"
+			],
+			"context_filter": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AUTOTRADER_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of AutoTrader  project?",
+				"How about AutoTrader  logo",
+				"let me know AutoTrader  logo",
+				"provide me AutoTrader  logo",
+				"can you send me AutoTrader  logo"
+			],
+			"responses": [
+				"Here it is :autotrader:"
+			],
+			"context_set": "AUTOTRADER_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS",
+			"patterns": [
+				"Agreement Express  info",
+				"Agreement Express  information",
+				"Agreement Express  concern",
+				"I have some questions about Agreement Express project",
+				"help with Agreement Express  account",
+				"Agreement Express  project",
+				"Agreement Express  account",
+				"Agreement Express"
+			],
+			"responses": [
+				":agreementexpress: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Agreement Express  account. What's information that you need me to help with?"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"625 Howe St. Suite 900 Vancouver, British Columbia Canada V6C 2T6"
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Agreement Express  address?",
+				"Address of Agreement Express  office?",
+				"where is the Agreement Express 's office in US",
+				"Location of Agreement Express 's office",
+				"where in US?",
+				"can you give me Agreement Express  address?",
+				"can you give me the address of Agreement Express  account?",
+				"Agreement Express  address"
+			],
+			"responses": [
+				"625 Howe St. Suite 900 Vancouver, British Columbia Canada V6C 2T6"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"Fintech"
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Agreement Express  business domain?",
+				"Agreement Express  domain knowledge?",
+				"in which field Agreement Express  is working on",
+				"business field of Agreement Express  project",
+				"Agreement Express  bussiness?",
+				"Agreement Express  domain?",
+				"I want to know about the Agreement Express  bussiness domain?",
+				"Agreement Express  domain"
+			],
+			"responses": [
+				"Fintech"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://agreementexpress.com/"
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Agreement Express  url",
+				"Agreement Express  website url",
+				"do Agreement Express  have a website",
+				"where can find more information about Agreement Express  account?",
+				"agreementexpress website please?",
+				"Agreement Express  website?",
+				"can you give me Agreement Express  website?",
+				"can you give me Agreement Express  webpage?",
+				"Agreement Express  website"
+			],
+			"responses": [
+				"https://agreementexpress.com/"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"Sep 16, 2019"
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Agreement Express  begin?",
+				"The start date of Agreement Express  project?",
+				"When does Agreement Express  start?",
+				"Agreement Express  Start date?",
+				"Agreement Express  Begin on?",
+				"Could you give me Agreement Express  start date?",
+				"The first day of Agreement Express  project?",
+				"The day of Agreement Express  begining?",
+				"Can you give me Agreement Express  team start date?",
+				"Can you give me Agreement Express  start date?",
+				"Agreement Express  beginning date"
+			],
+			"responses": [
+				"Sep 16, 2019"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"16"
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Agreement Express  project?",
+				"How many members in Agreement Express  acount?",
+				"How many members in Agreement Express ?",
+				"How many people are there in Agreement Express ?",
+				"How many people in Agreement Express  project?",
+				"How many people are working in Agreement Express  acount?",
+				"How many people in Agreement Express  team?",
+				"Agreement Express  Number of members?",
+				"can you give me the number of members Agreement Express  team?",
+				"could you please give me how many members in Agreement Express  team?",
+				"Agreement Express  team size",
+				"how many Agreement Express  resources?",
+				"Agreement Express  resources"
+			],
+			"responses": [
+				"16"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Agreement Express  team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Agreement Express  offshore team located in KMS?",
+				"Where can I find Agreement Express  team?",
+				"Where is this Agreement Express  account located?",
+				"Where is this Agreement Express  project located?",
+				"Which floor Agreement Express  team located?",
+				"which floor does Agreement Express  located?",
+				"Agreement Express  on which floor?",
+				"where is Agreement Express  team are seating?",
+				"could you please give me the location of Agreement Express  team?",
+				"can you give me Agreement Express  location?",
+				"Agreement Express  floor?",
+				"KMS office",
+				"where is Agreement Express  in KMS office",
+				"where can I find Agreement Express  in KMS office",
+				"where can I find Agreement Express  in Viet Nam office",
+				"where can I find Agreement Express  in VN office"
+			],
+			"responses": [
+				"4th floor _ TV office"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Agreement Express  team?",
+				"any activities in Agreement Express  team?",
+				"Agreement Express  Favorite activities?",
+				"What are Agreement Express  favorite activities?",
+				"What are the favorite activities of Agreement Express ?",
+				"Does Agreement Express  have any favorite activity?",
+				"Agreement Express  Activities?",
+				"Agreement Express  Activity?",
+				"Agreement Express  Favorite activity?",
+				"Any thing nice in Agreement Express  team?",
+				"Can you give me favorite activities of Agreement Express  team?"
+			],
+			"responses": [
+				"I'm not sure. They did not share with me :sweat_smile:"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"The shortest deal ever! Closed won within 10 days! :beers: "
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Agreement Express  project?",
+				"Any fun in Agreement Express  project?",
+				"Any fact in Agreement Express ?",
+				"Agreement Express  fun fact?",
+				"if Agreement Express  is fun?",
+				"tell me some stories of Agreement Express  project?",
+				"anything fun in Agreement Express  team?",
+				"Is there any fun fact in Agreement Express  account?"
+			],
+			"responses": [
+				"The shortest deal ever! Closed won within 10 days! :beers: "
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :agreementexpress:"
+			],
+			"context_filter": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "AGREEMENTEXPRESS_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Agreement Express  project?",
+				"How about Agreement Express  logo",
+				"let me know Agreement Express  logo",
+				"provide me Agreement Express  logo",
+				"can you send me Agreement Express  logo"
+			],
+			"responses": [
+				"Here it is :agreementexpress:"
+			],
+			"context_set": "AGREEMENTEXPRESS_CTX"
+		},
+		{
+			"tag": "DEALER",
+			"patterns": [
+				"Dealer  info",
+				"Dealer  information",
+				"Dealer  concern",
+				"I have some questions about Dealer project",
+				"help with Dealer  account",
+				"Dealer  project",
+				"Dealer  account",
+				"Dealer"
+			],
+			"responses": [
+				":dealer: Edith here to help you about Address, Domain/Business, Location, Start Date, Number of Members, Favorite Activities, Fun Fact of Dealer  account. What's information that you need me to help with?"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_ADDRESS_REDIRECT",
+			"patterns": [
+				"What is its address?",
+				"Address of its office?",
+				"where is the Client's office",
+				"Location of Client's office",
+				"where is it in US?",
+				"can you give me its address?",
+				"can you give me the address of this account?",
+				"address",
+				"how about its address",
+				"I want to know about its address",
+				"what is the address",
+				"I want to know where is it in US",
+				"its address please",
+				"please provide me its address",
+				"its office in US",
+				"its address in US",
+				"the office address",
+				"its location in US"
+			],
+			"responses": [
+				"1 Howard St, Burlington, VT 05401, USA"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_ADDRESS_DIRECT",
+			"patterns": [
+				"What is Dealer  address?",
+				"Address of Dealer  office?",
+				"where is the Dealer 's office in US",
+				"Location of Dealer 's office",
+				"where in US?",
+				"can you give me Dealer  address?",
+				"can you give me the address of Dealer  account?",
+				"Dealer  address"
+			],
+			"responses": [
+				"1 Howard St, Burlington, VT 05401, USA"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_DOMAIN_REDIRECT",
+			"patterns": [
+				"What is its business domain?",
+				"its domain knowledge?",
+				"in which field it is working on",
+				"business field of this account",
+				"its business?",
+				"its domain",
+				"I want to know about the bussiness domain?",
+				"domain",
+				"how about its business domain?",
+				"I want to know about its domain",
+				"I want to know about its business domain",
+				"domain knowledge",
+				"what is its business domain about ?",
+				"business knowledge",
+				"business"
+			],
+			"responses": [
+				"Automobile"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_DOMAIN_DIRECT",
+			"patterns": [
+				"What is Dealer  business domain?",
+				"Dealer  domain knowledge?",
+				"in which field Dealer  is working on",
+				"business field of Dealer  project",
+				"Dealer  bussiness?",
+				"Dealer  domain?",
+				"I want to know about the Dealer  bussiness domain?",
+				"Dealer  domain"
+			],
+			"responses": [
+				"Automobile"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_WEBSITE_REDIRECT",
+			"patterns": [
+				"could you give me its url",
+				"its website url",
+				"do it have a website",
+				"where can find more information about this account?",
+				"website please?",
+				"its website?",
+				"can you give me the website?",
+				"can you give me its page?",
+				"website",
+				"the website URL",
+				"can you give me the webpage",
+				"its webpage",
+				"the webpage"
+			],
+			"responses": [
+				"https://dealer.com/"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_WEBSITE_DIRECT",
+			"patterns": [
+				"could you give me Dealer  url",
+				"Dealer  website url",
+				"do Dealer  have a website",
+				"where can find more information about Dealer  account?",
+				"dealer website please?",
+				"Dealer  website?",
+				"can you give me Dealer  website?",
+				"can you give me Dealer  webpage?",
+				"Dealer  website"
+			],
+			"responses": [
+				"https://dealer.com/"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_STARTDATE_REDIRECT",
+			"patterns": [
+				"When does it begin?",
+				"The start date of this project?",
+				"When does it start?",
+				"Start date?",
+				"Begin on?",
+				"Could you give me its start date?",
+				"The first day of this project?",
+				"The day of begining?",
+				"Can you give me this team start date?",
+				"Can you give me its start date?",
+				"beginning date",
+				"start day",
+				"beginning day",
+				"how about its start date",
+				"I want to know about its start date"
+			],
+			"responses": [
+				"Mar 26, 2018"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_STARTDATE_DIRECT",
+			"patterns": [
+				"When does Dealer  begin?",
+				"The start date of Dealer  project?",
+				"When does Dealer  start?",
+				"Dealer  Start date?",
+				"Dealer  Begin on?",
+				"Could you give me Dealer  start date?",
+				"The first day of Dealer  project?",
+				"The day of Dealer  begining?",
+				"Can you give me Dealer  team start date?",
+				"Can you give me Dealer  start date?",
+				"Dealer  beginning date"
+			],
+			"responses": [
+				"Mar 26, 2018"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_NUMBEROFMEMBERS_REDIRECT",
+			"patterns": [
+				"How many members in this project?",
+				"How many members in this acount?",
+				"How many members in it?",
+				"How many people are there in it?",
+				"How many people in this project?",
+				"How many people in this acount?",
+				"How many people in it?",
+				"Number of members?",
+				"can you give me the number of members this team?",
+				"could you please give me how many members in this team?",
+				"team size",
+				"what is its number of members",
+				"number of people",
+				"how about the number of members",
+				"how about the team size",
+				"how big is it?",
+				"I want to know about its team size",
+				"I want to know about its number of members",
+				"how many resources?",
+				"resources"
+			],
+			"responses": [
+				"5"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_NUMBEROFMEMBERS_DIRECT",
+			"patterns": [
+				"How many members in Dealer  project?",
+				"How many members in Dealer  acount?",
+				"How many members in Dealer ?",
+				"How many people are there in Dealer ?",
+				"How many people in Dealer  project?",
+				"How many people are working in Dealer  acount?",
+				"How many people in Dealer  team?",
+				"Dealer  Number of members?",
+				"can you give me the number of members Dealer  team?",
+				"could you please give me how many members in Dealer  team?",
+				"Dealer  team size",
+				"how many Dealer  resources?",
+				"Dealer  resources"
+			],
+			"responses": [
+				"5"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_LOCATION_REDIRECT",
+			"patterns": [
+				"Where is offshore team located in KMS?",
+				"Where can I find this team?",
+				"Where is this account located?",
+				"Where is this project located?",
+				"Which floor this team located?",
+				"which floor does it located?",
+				"On which floor?",
+				"where is Dealer  team are seating?",
+				"could you please give me the location of this team?",
+				"can you give me the location?",
+				"floor?",
+				"In what Viet Nam office",
+				"In what VN office",
+				"KMS office",
+				"where are they in KMS office",
+				"where can I find them in KMS office",
+				"where can I find them in Viet Nam office",
+				"where can I find them in VN office"
+			],
+			"responses": [
+				"5th floor _ TV office"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_LOCATION_DIRECT",
+			"patterns": [
+				"Where is Dealer  offshore team located in KMS?",
+				"Where can I find Dealer  team?",
+				"Where is this Dealer  account located?",
+				"Where is this Dealer  project located?",
+				"Which floor Dealer  team located?",
+				"which floor does Dealer  located?",
+				"Dealer  on which floor?",
+				"where is Dealer  team are seating?",
+				"could you please give me the location of Dealer  team?",
+				"can you give me Dealer  location?",
+				"Dealer  floor?",
+				"KMS office",
+				"where is Dealer  in KMS office",
+				"where can I find Dealer  in KMS office",
+				"where can I find Dealer  in Viet Nam office",
+				"where can I find Dealer  in VN office"
+			],
+			"responses": [
+				"5th floor _ TV office"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_FAVORITEACTIVITIES_REDIRECT",
+			"patterns": [
+				"impression activity of this team?",
+				"any activities in this team?",
+				"Favorite activities?",
+				"What are favorite activities?",
+				"What are the favorite activities of it?",
+				"Does it have any favorite activity?",
+				"Activities?",
+				"Activity?",
+				"Favorite activity?",
+				"Favorite activities?",
+				"Any thing nice in this team?",
+				"Can you give me favorite activities of this team?",
+				"their frequent activities",
+				"how about their favorite activities",
+				"I want to know about their favorite activities"
+			],
+			"responses": [
+				"Eat all the time \\n Sweet people eat sweet things :sweet_potato: :pizza:"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_FAVORITEACTIVITIES_DIRECT",
+			"patterns": [
+				"impression activity of Dealer  team?",
+				"any activities in Dealer  team?",
+				"Dealer  Favorite activities?",
+				"What are Dealer  favorite activities?",
+				"What are the favorite activities of Dealer ?",
+				"Does Dealer  have any favorite activity?",
+				"Dealer  Activities?",
+				"Dealer  Activity?",
+				"Dealer  Favorite activity?",
+				"Any thing nice in Dealer  team?",
+				"Can you give me favorite activities of Dealer  team?"
+			],
+			"responses": [
+				"Eat all the time \\n Sweet people eat sweet things :sweet_potato: :pizza:"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_FUNFACT_REDIRECT",
+			"patterns": [
+				"Tell me about fun fact of this project?",
+				"Any fun in this project?",
+				"Any fact in it?",
+				"fun fact?",
+				"if is it fun?",
+				"tell me some stories of this project?",
+				"anything fun in this team?",
+				"Is there any fun fact in this account?",
+				"Tell me about its fun fact",
+				"How about its fun fact",
+				"let me know it fun fact",
+				"Do you know their fun fact",
+				"Tell me about the team fun fact"
+			],
+			"responses": [
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \\n The Standard of Beauty \\n You can call us dear (sweet people) - 'dear' is short for 'dealer'! \\n 'DDC' means Du Dep Chua? \\n 'DR' means Dep Roi!"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_FUNFACT_DIRECT",
+			"patterns": [
+				"Tell me about fun fact of Dealer  project?",
+				"Any fun in Dealer  project?",
+				"Any fact in Dealer ?",
+				"Dealer  fun fact?",
+				"if Dealer  is fun?",
+				"tell me some stories of Dealer  project?",
+				"anything fun in Dealer  team?",
+				"Is there any fun fact in Dealer  account?"
+			],
+			"responses": [
+				"A member of 'Tuyet Tinh Cox' (Cox Automotive Client) \\n The Standard of Beauty \\n You can call us dear (sweet people) - 'dear' is short for 'dealer'! \\n 'DDC' means Du Dep Chua? \\n 'DR' means Dep Roi!"
+			],
+			"context_set": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_LOGO_REDIRECT",
+			"patterns": [
+				"Tell me about the logo of this project?",
+				"How about its logo",
+				"let me know its logo",
+				"provide me its logo",
+				"can you send me its logo"
+			],
+			"responses": [
+				"Here it is :dealer:"
+			],
+			"context_filter": "DEALER_CTX"
+		},
+		{
+			"tag": "DEALER_LOGO_DIRECT",
+			"patterns": [
+				"Tell me about the logo of Dealer  project?",
+				"How about Dealer  logo",
+				"let me know Dealer  logo",
+				"provide me Dealer  logo",
+				"can you send me Dealer  logo"
+			],
+			"responses": [
+				"Here it is :dealer:"
+			],
+			"context_set": "DEALER_CTX"
 		}
 	]
 }
