@@ -4,3 +4,4 @@ tensorflow
 nltk
 tflearn
 tinydb
+flask
