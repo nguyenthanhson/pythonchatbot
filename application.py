@@ -7,8 +7,10 @@ from flask import Flask, request
 from upload_file import upload_file
 
 app = Flask(__name__, static_url_path='/static')
-app_id = os.environ.get('APP_ID')
-app_secret = os.environ.get('APP_SECRET')
+#app_id = os.environ.get('APP_ID')
+app_id = 'a1bd8198-255c-47f4-b259-f03e71b7eb5d'
+#app_secret = os.environ.get('APP_SECRET')
+app_secret = '?P@dpttfv.DZQ=K9JyrQd0w1zlWPMON1'
 MODEL_DIR = os.environ.get('MODEL_DIR')
 intents_file = "intents.json"
 ml_prediction  = None
